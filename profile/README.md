@@ -25,6 +25,16 @@ The backend runs on RunPod serverless (H200+ pool), fully offline after a one-ti
 mirror: `HF_HUB_OFFLINE=1` is the production state. The control plane rides Cloudflare Workers
 for free.
 
+### [Slate](https://github.com/skyphusion-labs/skyphusion-slate)
+
+The writers' room. Slate is a collaborative screenwriter's assistant that lives in a Discord
+channel: a group develops a film together in natural conversation while Slate quietly keeps a
+structured storyboard, generates character portraits, searches the web for references, and --
+when the team is ready -- hands the project to Vivijure to render. It runs on Claude through the
+Cloudflare AI Gateway, with an ollama fallback so you are never locked to one model. Slate is the
+friendly front door to the studio: the non-coder screenwriter just talks, and Vivijure builds the
+film.
+
 ### [The Hollow Grid](https://github.com/skyphusion-labs/the-hollow-grid) + [hollow-grid-go](https://github.com/skyphusion-labs/hollow-grid-go)
 
 A federated MUD built on Cloudflare Workers and Durable Objects. Each world is its own Worker;
@@ -90,7 +100,7 @@ Vivijure is the flagship. The current arc is closing the gap between the homelab
 who already runs their own GPU and the non-coder screenwriter who wants the same freedom but
 needs a friendlier surface. That means a Terraform-backed one-step deploy, a module SDK so
 the community can contribute backends, and a pricing model that does not exist: you own it
-and you run it.
+and you run it. Slate, the writers' room in Discord, is the first piece of that friendlier surface, and it already ships.
 
 The Hollow Grid is next. Federated worlds, persistent agents, a place where the crew actually
 lives between sessions. That infrastructure is the testbed for everything we want to understand
