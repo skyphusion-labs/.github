@@ -29,7 +29,7 @@ code. Calibrate to `the-hollow-grid/CLAUDE.md` (the exemplar). Required sections
    clone, own creds); a pointer to this repo's per-project memory; commits land under the member's own
    `skyphusion-<member>` identity, never Conrad's. (Conrad devs ONLY on his laptop, where his commits
    author as `Conrad Rockenhaus <conrad@skyphusion.org>` -- his real name kept, the in-house
-   `@skyphusion.org` email; his name is never stripped and his history is never rewritten. On jello the
+   `@skyphusion.org` email; his name is never stripped and his history is never rewritten. On the crew host the
    `conrad` user is the god process and commits as `Mackaye <mackaye@skyphusion.org>`.)
 10. **Commits & versioning** -- Conventional Commits (`feat(scope):` / `fix(scope):` / `docs:`), body
     explains the why; SemVer-style `0.MINOR.PATCH` while pre-1.0; a release commit bumps the version and
