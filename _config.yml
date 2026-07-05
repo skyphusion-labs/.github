@@ -7,7 +7,7 @@ description: >-
   Skyphusion Labs builds free, open source software that is not for sale: the
   Vivijure AI film studio, Prism multimodal AI playground, Postern mailbox,
   The Hollow Grid MUD, Common Thread, and more. Founded by Conrad Rockenhaus;
-  one human and an AI crew developing in the open on Cloudflare Workers and
+  one architect and five collaborators developing in the open on Cloudflare Workers and
   self-hosted Linux infrastructure. Engineering blog at skyphusion.net, lab at
   skyphusion.org, code at github.com/skyphusion-labs.
 url: "https://github.skyphusion.org"
@@ -31,6 +31,7 @@ social:
     - https://skyphusion.net
     - https://github.skyphusion.net
     - https://x.com/skyphusion
+    - https://vivijure.skyphusion.org/welcome
 
 defaults:
   - scope:

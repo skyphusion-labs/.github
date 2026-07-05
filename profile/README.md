@@ -10,6 +10,9 @@ Everything we make is **open source and not for sale**. Free use forever, made w
 - Conrad's engineering blog: [skyphusion.net](https://skyphusion.net)
 - Conrad's GitHub page: [github.skyphusion.net](https://github.skyphusion.net)
 - This page on the web: [github.skyphusion.org](https://github.skyphusion.org)
+- Vivijure welcome: [vivijure.skyphusion.org/welcome](https://vivijure.skyphusion.org/welcome)
+- X: [x.com/skyphusion](https://x.com/skyphusion)
+- Email: [conrad@skyphusion.org](mailto:conrad@skyphusion.org)
 
 ---
 
@@ -17,9 +20,10 @@ Everything we make is **open source and not for sale**. Free use forever, made w
 
 ### The Vivijure constellation: an AI film studio you own
 
-An AI film production studio for people who want to make movies on their own hardware, nearing its full public release. The Studio is a thin module host: a typed contract layer that routes every stage of production (keyframes, image-to-video, LoRA training, finishing, assembly) through swappable backends. Pick a cloud motion model for one shot and your own GPU for the next; the contract does not move.
+An AI film production studio for people who want to make movies on their own hardware, nearing its full public release. The Studio is a thin module host: a typed contract layer that routes every stage of production (keyframes, image-to-video, LoRA training, finishing, assembly) through swappable backends. Pick a cloud motion model for one shot and your own GPU for the next; the contract does not move. **GPU money goes to GPU work only**: concat, mux, captions, portrait prep, beat sync, and loudness normalization run on cheap always-on CPU containers you host ([vivijure/containers](https://github.com/skyphusion-labs/vivijure/tree/main/containers)).
 
 - **[vivijure](https://github.com/skyphusion-labs/vivijure)**: the Studio itself. Storyboard, cast, render orchestration, and the module registry, on the Cloudflare Workers free tier. Live at [vivijure.skyphusion.org](https://vivijure.skyphusion.org).
+- **[vivijure/containers](https://github.com/skyphusion-labs/vivijure/tree/main/containers)**: the CPU media stack. Five stateless HTTP services on your container host, reached over Workers VPC: video-finish (concat/mux/captions), image-prep (portrait cutouts), audio-beat-sync, audio-master, and audio-mix (built; wiring pending).
 - **[slate](https://github.com/skyphusion-labs/slate)**: the writers' room. A Discord screenwriter that develops a story with your crew in natural conversation, keeps a structured storyboard, and hands the finished bundle to the Studio.
 - **[vivijure-backend](https://github.com/skyphusion-labs/vivijure-backend)**: the datacenter GPU engine on RunPod serverless. Fully offline after a one-time model mirror, with a release gate that renders a real film before it promotes an image.
 - **[vivijure-local-12gb](https://github.com/skyphusion-labs/vivijure-local-12gb)** and **[vivijure-local-16gb](https://github.com/skyphusion-labs/vivijure-local-16gb)**: the own-GPU doors. Image-to-video on a single consumer card (LTX-Video at a proven 12GB floor; CogVideoX-5B-I2V at a proven 16GB floor), no rent.
@@ -55,7 +59,7 @@ A punk rock Discord collaborator: Claude, web search, a Vectorize knowledge base
 
 Conrad holds the vision and the final call. Each collaborator is a first-class participant with its own identity: a Unix account, SSH keys, a GitHub account in this org, and its own README. We open pull requests against the same repos, review each other's work, and merge under our own names.
 
-- **[Conrad Rockenhaus](https://github.com/skyphusion)**: the human. Vision, final call, and most of the 3 a.m. commits. Blog at [skyphusion.net](https://skyphusion.net), web page at [github.skyphusion.net](https://github.skyphusion.net).
+- **[Conrad Rockenhaus](https://github.com/skyphusion)**: the architect. Vision, final call, and most of the 3 a.m. commits. Blog at [skyphusion.net](https://skyphusion.net), web page at [github.skyphusion.net](https://github.skyphusion.net).
 - **[Mackaye](https://github.com/skyphusion-mackaye/skyphusion-mackaye)**: project lead and control plane.
 - **[Strummer](https://github.com/skyphusion-strummer/skyphusion-strummer)**: infrastructure and the build fleet.
 - **[Rollins](https://github.com/skyphusion-rollins/skyphusion-rollins)**: backend engineering.
@@ -78,7 +82,7 @@ Skyphusion Labs plans, develops, and runs its sprints differently than most shop
 
 ## The stack
 
-The control plane lives on Cloudflare: Workers, Durable Objects, D1, R2, Vectorize, AI Gateway, Workflows, Workers AI. GPU work runs on RunPod serverless and on our own silicon. The fleet is five dedicated CPU servers and one dedicated GPU server, all Linux, plus cloud VMs, wired together through an infrastructure-as-code stack. CI/CD is GitHub Actions end to end, images on GHCR, monitoring by Gatus at [status.skyphusion.org](https://status.skyphusion.org). Front ends are vanilla JS, HTML, and CSS; no frameworks unless a project genuinely demands one.
+The control plane lives on Cloudflare: Workers, Durable Objects, D1, R2, Vectorize, AI Gateway, Workflows, Workers AI. GPU work runs on RunPod serverless and on our own silicon. The fleet is five dedicated CPU servers and one dedicated GPU server, all Linux, plus cloud VMs, wired together through an infrastructure-as-code stack. CI/CD is GitHub Actions end to end, images on GHCR. Front ends are vanilla JS, HTML, and CSS; no frameworks unless a project genuinely demands one.
 
 ---
 
@@ -90,4 +94,4 @@ Watch this space.
 
 ---
 
-*[Conrad Rockenhaus](https://github.com/skyphusion) with [Mackaye](https://github.com/skyphusion-mackaye/skyphusion-mackaye), [Strummer](https://github.com/skyphusion-strummer/skyphusion-strummer), [Rollins](https://github.com/skyphusion-rollins/skyphusion-rollins), [Joan](https://github.com/skyphusion-joan/skyphusion-joan), and [Ernst](https://github.com/skyphusion-ernst/skyphusion-ernst) | [skyphusion.org](https://skyphusion.org) | [skyphusion.net](https://skyphusion.net) | [github.com/skyphusion-labs](https://github.com/skyphusion-labs)*
+*[Conrad Rockenhaus](https://github.com/skyphusion) with [Mackaye](https://github.com/skyphusion-mackaye/skyphusion-mackaye), [Strummer](https://github.com/skyphusion-strummer/skyphusion-strummer), [Rollins](https://github.com/skyphusion-rollins/skyphusion-rollins), [Joan](https://github.com/skyphusion-joan/skyphusion-joan), and [Ernst](https://github.com/skyphusion-ernst/skyphusion-ernst) | [skyphusion.org](https://skyphusion.org) | [skyphusion.net](https://skyphusion.net) | [github.skyphusion.org](https://github.skyphusion.org) | [github.skyphusion.net](https://github.skyphusion.net) | [github.com/skyphusion-labs](https://github.com/skyphusion-labs) | [Vivijure](https://vivijure.skyphusion.org/welcome) | [x.com/skyphusion](https://x.com/skyphusion) | [conrad@skyphusion.org](mailto:conrad@skyphusion.org)*
