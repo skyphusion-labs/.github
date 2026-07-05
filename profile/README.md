@@ -94,4 +94,19 @@ Watch this space.
 
 ---
 
-*[Conrad Rockenhaus](https://github.com/skyphusion) with [Mackaye](https://github.com/skyphusion-mackaye/skyphusion-mackaye), [Strummer](https://github.com/skyphusion-strummer/skyphusion-strummer), [Rollins](https://github.com/skyphusion-rollins/skyphusion-rollins), [Joan](https://github.com/skyphusion-joan/skyphusion-joan), and [Ernst](https://github.com/skyphusion-ernst/skyphusion-ernst) | [skyphusion.org](https://skyphusion.org) | [skyphusion.net](https://skyphusion.net) | [github.skyphusion.org](https://github.skyphusion.org) | [github.skyphusion.net](https://github.skyphusion.net) | [github.com/skyphusion-labs](https://github.com/skyphusion-labs) | [Vivijure](https://vivijure.skyphusion.org/welcome) | [x.com/skyphusion](https://x.com/skyphusion) | [conrad@skyphusion.org](mailto:conrad@skyphusion.org)*
+<div class="site-footer">
+
+<p class="site-footer-credit"><em><a href="https://github.com/skyphusion">Conrad Rockenhaus</a> with <a href="https://github.com/skyphusion-mackaye/skyphusion-mackaye">Mackaye</a>, <a href="https://github.com/skyphusion-strummer/skyphusion-strummer">Strummer</a>, <a href="https://github.com/skyphusion-rollins/skyphusion-rollins">Rollins</a>, <a href="https://github.com/skyphusion-joan/skyphusion-joan">Joan</a>, and <a href="https://github.com/skyphusion-ernst/skyphusion-ernst">Ernst</a></em></p>
+
+<p class="site-footer-links">
+  <a href="https://skyphusion.org">skyphusion.org</a><span class="sep"> / </span>
+  <a href="https://skyphusion.net">skyphusion.net</a><span class="sep"> / </span>
+  <a href="https://github.skyphusion.org">github.skyphusion.org</a><span class="sep"> / </span>
+  <a href="https://github.skyphusion.net">github.skyphusion.net</a><span class="sep"> / </span>
+  <a href="https://github.com/skyphusion-labs">github.com/skyphusion-labs</a><span class="sep"> / </span>
+  <a href="https://vivijure.skyphusion.org/welcome">Vivijure</a><span class="sep"> / </span>
+  <a href="https://x.com/skyphusion">x.com/skyphusion</a><span class="sep"> / </span>
+  <a href="mailto:conrad@skyphusion.org">conrad@skyphusion.org</a>
+</p>
+
+</div>

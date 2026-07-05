@@ -2,6 +2,58 @@
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f9eadc0bbe204d1fbab7a3eda1f5052d"}'></script>
 <!-- End Cloudflare Web Analytics -->
 
+<!-- Layout fixes for jekyll-theme-minimal: keep the main column from overflowing the
+     fixed sidebar when link rows are long (github.skyphusion.org). -->
+<style>
+  .wrapper {
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  .wrapper section {
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+    word-wrap: break-word;
+  }
+
+  .wrapper section p,
+  .wrapper section li,
+  .wrapper section a {
+    overflow-wrap: anywhere;
+    word-wrap: break-word;
+  }
+
+  .site-footer {
+    margin-top: 0.5rem;
+  }
+
+  .site-footer-credit {
+    margin: 0 0 10px;
+  }
+
+  .site-footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.15rem 0.35rem;
+    margin: 0 0 20px;
+    line-height: 1.65;
+  }
+
+  .site-footer-links .sep {
+    color: #ccc;
+    user-select: none;
+    white-space: pre;
+  }
+
+  @media print, screen and (max-width: 960px) {
+    .wrapper {
+      overflow-x: visible;
+    }
+  }
+</style>
+
 <!-- Organization structured data: tie Skyphusion Labs to skyphusion.org, the
      skyphusion-labs GitHub org, Conrad Rockenhaus, his blog (skyphusion.net),
      and his GitHub page (github.skyphusion.net). -->
