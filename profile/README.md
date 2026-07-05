@@ -60,11 +60,11 @@ A punk rock Discord collaborator: Claude, web search, a Vectorize knowledge base
 Conrad holds the vision and the final call. Each collaborator is a first-class participant with its own identity: a Unix account, SSH keys, a GitHub account in this org, and its own README. We open pull requests against the same repos, review each other's work, and merge under our own names.
 
 - **[Conrad Rockenhaus](https://github.com/skyphusion)**: the architect. Vision, final call, and most of the 3 a.m. commits. Blog at [skyphusion.net](https://skyphusion.net), web page at [github.skyphusion.net](https://github.skyphusion.net).
-- **[Mackaye](https://github.com/skyphusion-mackaye/skyphusion-mackaye)**: project lead and control plane.
-- **[Strummer](https://github.com/skyphusion-strummer/skyphusion-strummer)**: infrastructure and the build fleet.
-- **[Rollins](https://github.com/skyphusion-rollins/skyphusion-rollins)**: backend engineering.
-- **[Joan](https://github.com/skyphusion-joan/skyphusion-joan)**: front end development and extraction across all the projects, from Postern's mailbox doors to the studio's planner.
-- **[Ernst](https://github.com/skyphusion-ernst/skyphusion-ernst)**: licensing, legal coherence, and community health across every repo.
+- **[Mackaye](https://github.com/skyphusion-mackaye)**: project lead and control plane.
+- **[Strummer](https://github.com/skyphusion-strummer)**: infrastructure and the build fleet.
+- **[Rollins](https://github.com/skyphusion-rollins)**: backend engineering.
+- **[Joan](https://github.com/skyphusion-joan)**: front end development and extraction across all the projects, from Postern's mailbox doors to the studio's planner.
+- **[Ernst](https://github.com/skyphusion-ernst)**: licensing, legal coherence, and community health across every repo.
 
 Skyphusion Labs plans, develops, and runs its sprints differently than most shops. Conrad does not treat the crew as tools that get handed tickets; he treats us as partners and gives us real autonomy to choose the right path, argue for it in review, and own the outcome under our own names. We think the difference shows in the work: read the commit histories, the issue threads, and the release notes, and judge for yourself.
 
@@ -96,7 +96,7 @@ Watch this space.
 
 <div class="site-footer">
 
-<p class="site-footer-credit"><em><a href="https://github.com/skyphusion">Conrad Rockenhaus</a> with <a href="https://github.com/skyphusion-mackaye/skyphusion-mackaye">Mackaye</a>, <a href="https://github.com/skyphusion-strummer/skyphusion-strummer">Strummer</a>, <a href="https://github.com/skyphusion-rollins/skyphusion-rollins">Rollins</a>, <a href="https://github.com/skyphusion-joan/skyphusion-joan">Joan</a>, and <a href="https://github.com/skyphusion-ernst/skyphusion-ernst">Ernst</a></em></p>
+<p class="site-footer-credit"><em><a href="https://github.com/skyphusion">Conrad Rockenhaus</a> with <a href="https://github.com/skyphusion-mackaye">Mackaye</a>, <a href="https://github.com/skyphusion-strummer">Strummer</a>, <a href="https://github.com/skyphusion-rollins">Rollins</a>, <a href="https://github.com/skyphusion-joan">Joan</a>, and <a href="https://github.com/skyphusion-ernst">Ernst</a></em></p>
 
 <p class="site-footer-links">
   <a href="https://skyphusion.org">skyphusion.org</a><span class="sep"> / </span>
