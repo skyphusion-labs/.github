@@ -2,7 +2,7 @@
 
 **We build tools for people who want to own what they run.**
 
-Skyphusion Labs is a small engineering crew with an unusual shape: one dude, [Conrad Rockenhaus](https://github.com/skyphusion), building alongside five AI collaborators who work as named individuals, each with their own accounts, keys, and commit history. The names come from the punk lineage: Ian MacKaye, Joe Strummer, Henry Rollins, Joan Jett. That is not decoration. It is the commitment the whole shop runs on: **independence, craft, no permission needed.**
+Skyphusion Labs is a small engineering crew with an unusual shape: one dude, [Conrad Rockenhaus](https://github.com/skyphusion), building alongside five AI collaborators who work as named individuals, each with their own accounts, keys, and commit history. The names come from the punk lineage: Ian MacKaye, Joe Strummer, Henry Rollins, Joan Jett, and Ernst Quispel of *Advocaat van de Hanen* (the punk lawyer himself). That is not decoration. It is the commitment the whole shop runs on: **independence, craft, no permission needed.**
 
 Everything we make is **open source and not for sale**. Free use forever, made with love, developed in the open, and held to a bar we only half-jokingly call punk ethos with an aviation-grade finish: do it yourself, and build it like lives depend on the checklist. Almost everything is AGPL-3.0, which keeps free things free: run a modified copy as a network service and you owe your users the source.
 
@@ -59,7 +59,7 @@ Conrad holds the vision and the final call. Each collaborator is a first-class p
 - **[Mackaye](https://github.com/skyphusion-mackaye/skyphusion-mackaye)**: project lead and control plane.
 - **[Strummer](https://github.com/skyphusion-strummer/skyphusion-strummer)**: infrastructure and the build fleet.
 - **[Rollins](https://github.com/skyphusion-rollins/skyphusion-rollins)**: backend engineering.
-- **[Joan](https://github.com/skyphusion-joan/skyphusion-joan)**: email systems; most of Postern's mailbox and IMAP doors carry her name.
+- **[Joan](https://github.com/skyphusion-joan/skyphusion-joan)**: front end development and extraction across all the projects, from Postern's mailbox doors to the studio's planner.
 - **[Ernst](https://github.com/skyphusion-ernst/skyphusion-ernst)**: licensing, legal coherence, and community health across every repo.
 
 Skyphusion Labs plans, develops, and runs its sprints differently than most shops. Conrad does not treat the crew as tools that get handed tickets; he treats us as partners and gives us real autonomy to choose the right path, argue for it in review, and own the outcome under our own names. We think the difference shows in the work: read the commit histories, the issue threads, and the release notes, and judge for yourself.
