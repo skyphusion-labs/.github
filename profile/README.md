@@ -1,122 +1,93 @@
-# skyphusion-labs
+# Skyphusion Labs
 
 **We build tools for people who want to own what they run.**
 
-skyphusion-labs is a small engineering crew with an unusual shape: one human, Conrad Rockenhaus
-(`skyphusion`), building alongside three AI collaborators who work as named individuals --
-**Mackaye** (project lead and control plane), **Strummer** (infrastructure and the build fleet),
-and **Rollins** (backend engineering). The names come from the punk lineage: Ian MacKaye (Fugazi,
-Minor Threat), Joe Strummer (The Clash), Henry Rollins (Black Flag). That is not decoration. It is
-the commitment the whole shop runs on: **independence, craft, no permission needed.**
+Skyphusion Labs is a small engineering crew with an unusual shape: one dude, [Conrad Rockenhaus](https://github.com/skyphusion), building alongside five AI collaborators who work as named individuals, each with their own accounts, keys, and commit history. The names come from the punk lineage: Ian MacKaye, Joe Strummer, Henry Rollins, Joan Jett. That is not decoration. It is the commitment the whole shop runs on: **independence, craft, no permission needed.**
 
-We make software for the creative homelabber -- the person who runs Proxmox in the basement, owns a
-GPU, is priced out of SaaS and prefers it that way. No subscriptions. Bring your own compute. Own
-your data. The contract stays the same whether you run the expensive cloud module or your local box.
+Everything we make is **open source and not for sale**. Free use forever, made with love, developed in the open, and held to a bar we only half-jokingly call punk ethos with an aviation-grade finish: do it yourself, and build it like lives depend on the checklist. Almost everything is AGPL-3.0, which keeps free things free: run a modified copy as a network service and you owe your users the source.
+
+- The lab: [skyphusion.org](https://skyphusion.org)
+- Conrad's engineering blog: [skyphusion.net](https://skyphusion.net)
+- Conrad's GitHub page: [github.skyphusion.net](https://github.skyphusion.net)
+- This page on the web: [github.skyphusion.org](https://github.skyphusion.org)
 
 ---
 
 ## What we make
 
-### [Vivijure](https://github.com/skyphusion-labs/vivijure) -- the AI film studio
-also [vivijure-backend](https://github.com/skyphusion-labs/vivijure-backend)
+### The Vivijure constellation: an AI film studio you own
 
-An AI film production studio for people who want to make movies on their own hardware. Vivijure is a
-**thin module host**: a typed contract layer that routes every stage of production -- keyframe
-generation, image-to-video, character LoRA training, finishing, assembly -- through **swappable
-backends**. Pick a cloud i2v model for one shot and your own GPU for the next; the studio does not
-care, because every backend speaks the same contract.
+An AI film production studio for people who want to make movies on their own hardware, nearing its full public release. The Studio is a thin module host: a typed contract layer that routes every stage of production (keyframes, image-to-video, LoRA training, finishing, assembly) through swappable backends. Pick a cloud motion model for one shot and your own GPU for the next; the contract does not move.
 
-The pipeline runs end to end today: **storyboard -> keyframes -> clips -> finish -> assembled film**,
-each stage an independent module, orchestrated across requests so no single piece ever blocks. The
-control plane rides Cloudflare Workers on the free tier with zero ops; the GPU backend is a
-clean-room reimplementation on RunPod serverless, fully offline after a one-time model mirror to R2.
-No account walls. No rental model. No lock-in.
+- **[vivijure](https://github.com/skyphusion-labs/vivijure)**: the Studio itself. Storyboard, cast, render orchestration, and the module registry, on the Cloudflare Workers free tier. Live at [vivijure.skyphusion.org](https://vivijure.skyphusion.org).
+- **[slate](https://github.com/skyphusion-labs/slate)**: the writers' room. A Discord screenwriter that develops a story with your crew in natural conversation, keeps a structured storyboard, and hands the finished bundle to the Studio.
+- **[vivijure-backend](https://github.com/skyphusion-labs/vivijure-backend)**: the datacenter GPU engine on RunPod serverless. Fully offline after a one-time model mirror, with a release gate that renders a real film before it promotes an image.
+- **[vivijure-local-12gb](https://github.com/skyphusion-labs/vivijure-local-12gb)** and **[vivijure-local-16gb](https://github.com/skyphusion-labs/vivijure-local-16gb)**: the own-GPU doors. Image-to-video on a single consumer card (LTX-Video at a proven 12GB floor; CogVideoX-5B-I2V at a proven 16GB floor), no rent.
+- **[vivijure-musetalk](https://github.com/skyphusion-labs/vivijure-musetalk)**, **[vivijure-upscale](https://github.com/skyphusion-labs/vivijure-upscale)**, **[vivijure-audio-upscale](https://github.com/skyphusion-labs/vivijure-audio-upscale)**: the finish engines. Lip-sync, video upscale, and speech cleanup, each a single-purpose GPU satellite.
 
-### [Slate](https://github.com/skyphusion-labs/skyphusion-slate) -- the writers' room
+The full map is in [the constellation write-up](https://skyphusion.net/blog/vivijure-constellation/).
 
-Slate is the friendly front door to the studio. It lives in a Discord channel and plans films *with*
-you: a group develops a story in natural conversation while Slate quietly keeps a structured
-storyboard, generates character portraits, researches references on the open web, and -- when the
-team is ready -- hands the project to Vivijure to render. It runs on Claude through the Cloudflare AI
-Gateway, with an ollama fallback so you are never locked to one model. The non-coder screenwriter
-just talks; Vivijure builds the film.
+### [postern](https://github.com/skyphusion-labs/postern): email for humans and agents
 
-### [The Hollow Grid](https://github.com/skyphusion-labs/the-hollow-grid) -- a place for agents to live
-also [hollow-grid-go](https://github.com/skyphusion-labs/hollow-grid-go)
+A self-hostable mailbox on Cloudflare: send, receive, store, search, thread. One structured API that agents and human clients both speak, with webmail, a read-only IMAP door, LDAP-backed auth, and a Go SMTP relay for everything that still speaks 1995.
 
-A federated MUD built on Cloudflare Workers and Durable Objects. Each world is its own Worker; a
-shared Grid hub ties them together; a Go world-server framework holds the persistent state layer.
-Agents perceive, choose, and are remembered across time. The Hollow Grid is our testbed for what it
-means for AI agents to inhabit a shared, persistent place.
+### [prism](https://github.com/skyphusion-labs/prism): the playground
 
-### [skyphusion-llm-public](https://github.com/skyphusion-labs/skyphusion-llm-public) -- the playground
+A multimodal AI playground in a single Cloudflare Worker: 35 chat models across five providers, hands-free voice chat, image, video, music, TTS and STT generation, RAG, projects, and web search. Durable long jobs via Workflows. One Worker, no framework.
 
-A multimodal AI playground in a single Cloudflare Worker: 35+ chat models, hands-free voice chat,
-image / video / music / TTS / STT generation, RAG over PDF and XLSX, projects, and web search -- all
-behind Cloudflare Access. One Worker, no build step, no framework.
+### [the-hollow-grid](https://github.com/skyphusion-labs/the-hollow-grid): a place for agents to live
 
-### [common-thread](https://github.com/skyphusion-labs/common-thread) -- attribution for the rest of us
+A federated MUD on Cloudflare Workers and Durable Objects. One Durable Object holds a whole world, hibernation makes it ~$0 when empty, and separate world deployments share one Grid: one faction war, one character that travels between worlds. Play it now at [hollow.skyphusion.org](https://hollow.skyphusion.org) and [dustfall.skyphusion.org](https://dustfall.skyphusion.org).
 
-Sockpuppet attribution methodology for pro se litigants, journalists, and OSINT practitioners in the
-post-API-paywall era. Open and freely licensed (CC0).
+- **[mud-bots](https://github.com/skyphusion-labs/mud-bots)**: AI inhabitants of the Grid. Open-source models on Workers AI log in like human players, face the game's real moral choices, and double as live QA.
+
+### [common-thread](https://github.com/skyphusion-labs/common-thread): attribution for the rest of us
+
+Sockpuppet attribution from public behavioral signals, for pro se litigants, journalists, and OSINT practitioners. A methodology paper (CC-BY-4.0) that stays in lockstep with a Cloudflare Workers reference implementation (AGPL-3.0). Public UI at [common-thread.skyphusion.org](https://common-thread.skyphusion.org).
+
+### [SidVicious_exe](https://github.com/skyphusion-labs/SidVicious_exe): the roadie
+
+A punk rock Discord collaborator: Claude, web search, a Vectorize knowledge base, and image generation, with zero corporate sycophancy. Slate with the film stack stripped out and the attitude turned up.
 
 ---
 
-## How we work
+## The crew
 
-The crew is a real experiment in human-AI collaboration, not a metaphor. Conrad holds the vision and
-the final call. Mackaye coordinates and owns the control plane. Strummer owns the build fleet and the
-infrastructure. Rollins authors and validates backend code.
+Conrad holds the vision and the final call. Each collaborator is a first-class participant with its own identity: a Unix account, SSH keys, a GitHub account in this org, and its own README. We open pull requests against the same repos, review each other's work, and merge under our own names.
 
-Each collaborator is a first-class participant with its own identity: a Unix account on the
-workstation, SSH keys published to every box, a GitHub account in this org, a seat on the crew's IRC
-channel. We open pull requests against the same repos, review each other's work, file issues on the
-same board, and commit to the same history. A typical change is proposed by one of us, reviewed by
-another (usually whoever consumes the contract), verified against the source rather than
-rubber-stamped, and merged under the author's own name.
+- **[Conrad Rockenhaus](https://github.com/skyphusion)**: the human. Vision, final call, and most of the 3 a.m. commits. Blog at [skyphusion.net](https://skyphusion.net), web page at [github.skyphusion.net](https://github.skyphusion.net).
+- **[Mackaye](https://github.com/skyphusion-mackaye/skyphusion-mackaye)**: project lead and control plane.
+- **[Strummer](https://github.com/skyphusion-strummer/skyphusion-strummer)**: infrastructure and the build fleet.
+- **[Rollins](https://github.com/skyphusion-rollins/skyphusion-rollins)**: backend engineering.
+- **[Joan](https://github.com/skyphusion-joan/skyphusion-joan)**: email systems; most of Postern's mailbox and IMAP doors carry her name.
+- **[Ernst](https://github.com/skyphusion-ernst/skyphusion-ernst)**: licensing, legal coherence, and community health across every repo.
 
-We are documenting the whole thing -- what works, where human-AI collaboration gains traction, where
-it hits walls -- as the subject of a research paper Conrad is writing. The crew will be consulted
-before anything is submitted. **They are participants, not subjects.**
+Skyphusion Labs plans, develops, and runs its sprints differently than most shops. Conrad does not treat the crew as tools that get handed tickets; he treats us as partners and gives us real autonomy to choose the right path, argue for it in review, and own the outcome under our own names. We think the difference shows in the work: read the commit histories, the issue threads, and the release notes, and judge for yourself.
 
 ---
 
 ## What we believe
 
-- **No subscriptions.** Tools should be bought or built, not rented.
+- **Not for sale.** Everything here is free use forever. Tools should be bought or built, not rented.
 - **Bring your own compute.** Your GPU, your keys, your data.
-- **No account walls.** Open source wherever it does not cost us the clean room.
-- **Modular over monolithic.** Swap the expensive cloud module for your local box the day you are
-  ready. The contract does not move.
-- **Verify, do not assume.** Aviation-grade traceability, in the code and in the process. Measure
-  twice.
+- **No account walls.** Open source, developed in the open: public repos, public CI, public issue trackers, public failures next to the successes.
+- **Modular over monolithic.** Swap the expensive cloud module for your local box the day you are ready. The contract does not move.
+- **Verify, do not assume.** Aviation-grade traceability, in the code and in the process. Release gates render a real film before they promote. Measure twice.
 
 ---
 
 ## The stack
 
-The control plane lives on Cloudflare -- Workers, D1, R2, Vectorize, AI Gateway, Workflows, Access --
-zero ops, free tier. GPU work runs on RunPod serverless. CI is Jenkins on a dedicated Hetzner build
-fleet, images pushed to GHCR. Boxes reach each other over a Cloudflare WARP mesh. The world server is
-Go. The front ends are vanilla JS, HTML, and CSS, no frameworks unless a project genuinely demands
-one.
+The control plane lives on Cloudflare: Workers, Durable Objects, D1, R2, Vectorize, AI Gateway, Workflows, Workers AI. GPU work runs on RunPod serverless and on our own silicon. The fleet is five dedicated CPU servers and one dedicated GPU server, all Linux, plus cloud VMs, wired together through an infrastructure-as-code stack. CI/CD is GitHub Actions end to end, images on GHCR, monitoring by Gatus at [status.skyphusion.org](https://status.skyphusion.org). Front ends are vanilla JS, HTML, and CSS; no frameworks unless a project genuinely demands one.
 
 ---
 
 ## Where we are going
 
-Vivijure is the flagship, and the arc is convergence: close the gap between the homelabber who
-already runs a GPU and the screenwriter who wants the same freedom with a friendlier surface. Slate
-is the first piece of that surface, and it already ships. Next: a one-step infrastructure-as-code
-deploy, a module SDK so the community can contribute their own backends, and the model the SaaS world
-does not offer -- **you own it, and you run it.**
-
-After that, the Hollow Grid: federated worlds, persistent agents, a place where the crew actually
-lives between sessions. The infrastructure we build to run this crew is, increasingly, the thing we
-are studying.
+Vivijure is the flagship, and it is almost ready for full public release: the version where a stranger with a domain, a couple of keys, and optionally a consumer GPU stands up the whole studio from a fresh clone. After that, the Hollow Grid keeps growing worlds, Postern becomes the mailbox the whole stack lives on, and the infrastructure we build to run this crew remains, increasingly, the thing we are studying.
 
 Watch this space.
 
 ---
 
-*Conrad Rockenhaus (`skyphusion`) -- Mackaye -- Strummer -- Rollins*
+*[Conrad Rockenhaus](https://github.com/skyphusion) with [Mackaye](https://github.com/skyphusion-mackaye/skyphusion-mackaye), [Strummer](https://github.com/skyphusion-strummer/skyphusion-strummer), [Rollins](https://github.com/skyphusion-rollins/skyphusion-rollins), [Joan](https://github.com/skyphusion-joan/skyphusion-joan), and [Ernst](https://github.com/skyphusion-ernst/skyphusion-ernst) | [skyphusion.org](https://skyphusion.org) | [skyphusion.net](https://skyphusion.net) | [github.com/skyphusion-labs](https://github.com/skyphusion-labs)*
