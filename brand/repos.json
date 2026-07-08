@@ -1,0 +1,213 @@
+[
+  {
+    "owner": "skyphusion-labs",
+    "repo": ".github",
+    "display": "Skyphusion Labs",
+    "tagline": "Who we are, what we build, where we are going.",
+    "accent": "#06b6d4",
+    "accent2": "#1d4ed8",
+    "chip": "ORG",
+    "motif": "org"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "vivijure",
+    "display": "vivijure",
+    "tagline": "Self-hosted AI film studio. Your GPU, your keys, your films.",
+    "accent": "#22d3ee",
+    "accent2": "#a78bfa",
+    "chip": "AGPL-3.0",
+    "motif": "film"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "vivijure-backend",
+    "display": "vivijure-backend",
+    "tagline": "SDXL keyframes, Wan i2v, and ffmpeg assembly on RunPod.",
+    "accent": "#f97316",
+    "accent2": "#fbbf24",
+    "chip": "GPU",
+    "motif": "gpu"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "vivijure-com",
+    "display": "vivijure.com",
+    "tagline": "The Vivijure promotional site and showcase.",
+    "accent": "#22d3ee",
+    "accent2": "#a78bfa",
+    "chip": "SITE",
+    "motif": "film"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "vivijure-local-12gb",
+    "display": "vivijure-local-12gb",
+    "tagline": "LTX-Video i2v on a 12GB consumer GPU. Homelab motion.",
+    "accent": "#34d399",
+    "accent2": "#06b6d4",
+    "chip": "12GB",
+    "motif": "gpu"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "vivijure-local-16gb",
+    "display": "vivijure-local-16gb",
+    "tagline": "CogVideoX-5B i2v on a 16GB consumer GPU.",
+    "accent": "#34d399",
+    "accent2": "#22d3ee",
+    "chip": "16GB",
+    "motif": "gpu"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "vivijure-musetalk",
+    "display": "vivijure-musetalk",
+    "tagline": "MuseTalk audio-driven lip-sync finish engine.",
+    "accent": "#f472b6",
+    "accent2": "#a78bfa",
+    "chip": "FINISH",
+    "motif": "lipsync"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "vivijure-upscale",
+    "display": "vivijure-upscale",
+    "tagline": "Real-ESRGAN CUDA video upscale finish module.",
+    "accent": "#c084fc",
+    "accent2": "#818cf8",
+    "chip": "FINISH",
+    "motif": "upscale"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "vivijure-audio-upscale",
+    "display": "vivijure-audio-upscale",
+    "tagline": "CUDA speech enhancement for dialogue finish paths.",
+    "accent": "#2dd4bf",
+    "accent2": "#06b6d4",
+    "chip": "FINISH",
+    "motif": "audio"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "slate",
+    "display": "slate",
+    "tagline": "Collaborative AI screenwriter for Discord.",
+    "accent": "#a78bfa",
+    "accent2": "#818cf8",
+    "chip": "DISCORD",
+    "motif": "discord"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "prism",
+    "display": "prism",
+    "tagline": "Multimodal AI playground in one Cloudflare Worker.",
+    "accent": "#38bdf8",
+    "accent2": "#f472b6",
+    "chip": "35 MODELS",
+    "motif": "prism"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "postern",
+    "display": "postern",
+    "tagline": "Email for humans and agents on the Cloudflare stack.",
+    "accent": "#22d3ee",
+    "accent2": "#34d399",
+    "chip": "MAIL",
+    "motif": "email"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "search-mcp",
+    "display": "search-mcp",
+    "tagline": "Cloudflare AI Search toolkit: MCP, widget, corpus sync.",
+    "accent": "#60a5fa",
+    "accent2": "#06b6d4",
+    "chip": "AGPL",
+    "motif": "search"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "the-hollow-grid",
+    "display": "the-hollow-grid",
+    "tagline": "Federated MUD on Workers and Durable Objects.",
+    "accent": "#4ade80",
+    "accent2": "#22d3ee",
+    "chip": "MUD",
+    "motif": "mud"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "mud-bots",
+    "display": "mud-bots",
+    "tagline": "AI inhabitants of The Hollow Grid.",
+    "accent": "#4ade80",
+    "accent2": "#a78bfa",
+    "chip": "AGENTS",
+    "motif": "mud"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "common-thread",
+    "display": "common-thread",
+    "tagline": "Sockpuppet attribution from public behavioral signals.",
+    "accent": "#fbbf24",
+    "accent2": "#f97316",
+    "chip": "OSINT",
+    "motif": "thread"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "SidVicious_exe",
+    "display": "SidVicious_exe",
+    "tagline": "Punk rock Discord roadie. Zero corporate sycophancy.",
+    "accent": "#ef4444",
+    "accent2": "#f97316",
+    "chip": "DISCORD",
+    "motif": "discord"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "skyphusion-org",
+    "display": "skyphusion.org",
+    "tagline": "The lab intro site. We build things you can keep.",
+    "accent": "#06b6d4",
+    "accent2": "#1d4ed8",
+    "chip": "LAB",
+    "motif": "org"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "skyphusion-net",
+    "display": "skyphusion.net",
+    "tagline": "Engineering blog of Conrad Rockenhaus.",
+    "accent": "#60a5fa",
+    "accent2": "#06b6d4",
+    "chip": "BLOG",
+    "motif": "blog"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "cf-email-relay",
+    "display": "cf-email-relay",
+    "tagline": "Go SMTP bridge to Cloudflare Email Sending.",
+    "accent": "#22d3ee",
+    "accent2": "#f97316",
+    "chip": "RELAY",
+    "motif": "email"
+  },
+  {
+    "owner": "skyphusion",
+    "repo": "skyphusion",
+    "display": "Conrad Rockenhaus",
+    "tagline": "Independent developer. Navy veteran. OSS architect.",
+    "accent": "#06b6d4",
+    "accent2": "#1d4ed8",
+    "chip": "@skyphusion",
+    "motif": "org",
+    "org_label": "SKYPHUSION"
+  }
+]
