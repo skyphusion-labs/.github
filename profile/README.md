@@ -10,7 +10,7 @@ Everything we make is **open source and not for sale**. Free use forever, made w
 - Conrad's engineering blog: [skyphusion.net](https://skyphusion.net)
 - Conrad's GitHub page: [github.skyphusion.net](https://github.skyphusion.net)
 - This page on the web: [github.skyphusion.org](https://github.skyphusion.org)
-- Vivijure welcome: [vivijure.skyphusion.org/welcome](https://vivijure.skyphusion.org/welcome)
+- Vivijure: [vivijure.com](https://vivijure.com) ([welcome demo](https://vivijure.skyphusion.org/welcome))
 - X: [x.com/skyphusion](https://x.com/skyphusion)
 - Email: [conrad@skyphusion.org](mailto:conrad@skyphusion.org)
 
@@ -22,7 +22,7 @@ Everything we make is **open source and not for sale**. Free use forever, made w
 
 An AI film production studio for people who want to make movies on their own hardware, nearing its full public release. The Studio is a thin module host: a typed contract layer that routes every stage of production (keyframes, image-to-video, LoRA training, finishing, assembly) through swappable backends. Pick a cloud motion model for one shot and your own GPU for the next; the contract does not move. **GPU money goes to GPU work only**: concat, mux, captions, portrait prep, beat sync, and loudness normalization run on cheap always-on CPU containers you host ([vivijure/containers](https://github.com/skyphusion-labs/vivijure/tree/main/containers)).
 
-- **[vivijure](https://github.com/skyphusion-labs/vivijure)**: the Studio itself. Storyboard, cast, render orchestration, and the module registry, on the Cloudflare Workers free tier. Live at [vivijure.skyphusion.org](https://vivijure.skyphusion.org).
+- **[vivijure](https://github.com/skyphusion-labs/vivijure)**: the Studio itself. Storyboard, cast, render orchestration, and the module registry, on the Cloudflare Workers free tier. Live at [vivijure.com](https://vivijure.com) ([welcome demo](https://vivijure.skyphusion.org/welcome)).
 - **[vivijure/containers](https://github.com/skyphusion-labs/vivijure/tree/main/containers)**: the CPU media stack. Five stateless HTTP services on your container host, reached over Workers VPC: video-finish (concat/mux/captions), image-prep (portrait cutouts), audio-beat-sync, audio-master, and audio-mix (built; wiring pending).
 - **[slate](https://github.com/skyphusion-labs/slate)**: the writers' room. A Discord screenwriter that develops a story with your crew in natural conversation, keeps a structured storyboard, and hands the finished bundle to the Studio.
 - **[vivijure-backend](https://github.com/skyphusion-labs/vivijure-backend)**: the datacenter GPU engine on RunPod serverless. Fully offline after a one-time model mirror, with a release gate that renders a real film before it promotes an image.
@@ -104,7 +104,8 @@ Watch this space.
   <a href="https://github.skyphusion.org">github.skyphusion.org</a><span class="sep"> / </span>
   <a href="https://github.skyphusion.net">github.skyphusion.net</a><span class="sep"> / </span>
   <a href="https://github.com/skyphusion-labs">github.com/skyphusion-labs</a><span class="sep"> / </span>
-  <a href="https://vivijure.skyphusion.org/welcome">Vivijure</a><span class="sep"> / </span>
+  <a href="https://vivijure.com">vivijure.com</a><span class="sep"> / </span>
+  <a href="https://vivijure.skyphusion.org/welcome">Vivijure welcome</a><span class="sep"> / </span>
   <a href="https://x.com/skyphusion">x.com/skyphusion</a><span class="sep"> / </span>
   <a href="mailto:conrad@skyphusion.org">conrad@skyphusion.org</a>
 </p>
