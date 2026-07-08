@@ -10,16 +10,26 @@
 <link rel="me" href="https://vivijure.com" />
 <link rel="me" href="https://vivijure.skyphusion.org/welcome" />
 
-<!-- Layout fixes for jekyll-theme-minimal: keep the main column from overflowing the
-     fixed sidebar when link rows are long (github.skyphusion.org). -->
+<!-- Layout fixes for jekyll-theme-minimal: wrap long link rows without breaking the
+     270px fixed sidebar + 500px floated main column (github.skyphusion.org). -->
 <style>
+  /* Do NOT use overflow-x: clip on .wrapper -- it prevents float containment and
+     hides the entire main column (blank right side). */
   .wrapper {
-    max-width: 100%;
-    overflow-x: clip;
+    width: 860px;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+  }
+
+  .wrapper::after {
+    content: "";
+    display: table;
+    clear: both;
   }
 
   .wrapper section {
-    max-width: 100%;
+    width: 500px;
+    float: right;
     box-sizing: border-box;
     overflow-wrap: anywhere;
     word-wrap: break-word;
@@ -57,7 +67,14 @@
 
   @media print, screen and (max-width: 960px) {
     .wrapper {
-      overflow-x: visible;
+      width: auto;
+      max-width: none;
+      margin: 0;
+    }
+
+    .wrapper section {
+      width: auto;
+      float: none;
     }
   }
 </style>
