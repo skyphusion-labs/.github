@@ -31,13 +31,14 @@ social:
     - https://skyphusion.net
     - https://github.skyphusion.net
     - https://x.com/skyphusion
+    - https://vivijure.com
     - https://vivijure.skyphusion.org/welcome
 
 defaults:
   - scope:
       path: ""
     values:
-      image: https://skyphusion.net/og-default.png
+      image: https://skyphusion.org/og-image.png
 
 theme: jekyll-theme-minimal
 
