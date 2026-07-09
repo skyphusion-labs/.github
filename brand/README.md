@@ -99,3 +99,19 @@ chmod +x apply-seo-metadata.sh
 ```
 
 Edit `seo-metadata.json` when a repo goes public, ships a live URL, or the pitch changes. Pair with README/package.json `homepage` and `keywords` in the product repo itself.
+
+### CI drift gate
+
+Workflow [`.github/workflows/oss-discoverability-drift.yml`](../.github/workflows/oss-discoverability-drift.yml) runs on PRs that touch the catalogs, on merges to `main`, weekly (Mondays 14:00 UTC), and on demand. It fails if live GitHub topics or About metadata differ from `topics.json` / `seo-metadata.json`.
+
+After editing a catalog, apply live state before merge:
+
+```bash
+cd brand
+./update-topics.sh          # or --repo / --family
+./apply-seo-metadata.sh     # or --repo
+./update-topics.sh --check
+./apply-seo-metadata.sh --check
+```
+
+Archived repos are skipped by the About-metadata check (GitHub blocks writes).

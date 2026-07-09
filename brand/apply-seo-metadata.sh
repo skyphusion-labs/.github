@@ -59,11 +59,16 @@ while IFS= read -r entry; do
   want_home="$(jq -r '.homepage // ""' <<<"$entry")"
   slug="${owner}/${repo}"
 
-  live="$(gh api "repos/${slug}" -q '{description: (.description // ""), homepage: (.homepage // "")}')"
+  live="$(gh api "repos/${slug}" -q '{description: (.description // ""), homepage: (.homepage // ""), archived: .archived}')"
   have_desc="$(jq -r '.description' <<<"$live")"
   have_home="$(jq -r '.homepage' <<<"$live")"
+  is_archived="$(jq -r '.archived' <<<"$live")"
 
   if [[ "$CHECK" == true ]]; then
+    if [[ "$is_archived" == "true" ]]; then
+      echo "SKIP ${slug} (archived)"
+      continue
+    fi
     if [[ "$want_desc" != "$have_desc" || "$want_home" != "$have_home" ]]; then
       echo "DRIFT ${slug}"
       echo "  want desc: ${want_desc}"
