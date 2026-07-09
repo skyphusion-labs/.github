@@ -1,0 +1,50 @@
+name: OSS discoverability drift
+
+# Fail when live GitHub repo topics or About metadata diverge from brand/*.json.
+# Catches manual GitHub UI edits and catalog PRs that forgot to run the apply scripts.
+
+on:
+  pull_request:
+    paths:
+      - 'brand/topics.json'
+      - 'brand/seo-metadata.json'
+      - 'brand/update-topics.sh'
+      - 'brand/apply-seo-metadata.sh'
+      - '.github/workflows/oss-discoverability-drift.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'brand/topics.json'
+      - 'brand/seo-metadata.json'
+      - 'brand/update-topics.sh'
+      - 'brand/apply-seo-metadata.sh'
+      - '.github/workflows/oss-discoverability-drift.yml'
+  schedule:
+    # Weekly: catch drift from GitHub Settings edits outside the catalog.
+    - cron: '0 14 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: oss-discoverability-drift
+  cancel-in-progress: true
+
+jobs:
+  drift:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Verify topics catalog matches GitHub
+        working-directory: brand
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: ./update-topics.sh --check
+
+      - name: Verify About metadata catalog matches GitHub
+        working-directory: brand
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: ./apply-seo-metadata.sh --check
