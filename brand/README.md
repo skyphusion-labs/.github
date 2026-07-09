@@ -100,6 +100,8 @@ chmod +x apply-seo-metadata.sh
 
 Edit `seo-metadata.json` when a repo goes public, ships a live URL, or the pitch changes. Pair with README/package.json `homepage` and `keywords` in the product repo itself.
 
+See also [distribution.md](distribution.md) for npm, PyPI, and GHCR publish targets.
+
 ### CI drift gate
 
 Workflow [`.github/workflows/oss-discoverability-drift.yml`](../.github/workflows/oss-discoverability-drift.yml) runs on PRs that touch the catalogs, on merges to `main`, weekly (Mondays 14:00 UTC), and on demand. It fails if live GitHub topics or About metadata differ from `topics.json` / `seo-metadata.json`.
