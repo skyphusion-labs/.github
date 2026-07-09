@@ -78,3 +78,24 @@ Topic conventions (org-wide):
 - House stack: `cloudflare-workers`, `self-hosted`, `agpl`, `open-source`, `typescript` / `python` / `golang` as appropriate.
 - GPU satellites: `runpod`, `cuda`, `gpu`, plus model-specific tags (`sdxl`, `ltx-video`, `real-esrgan`, …).
 - Do not exceed 20 topics; prefer discoverability over exhaustiveness.
+
+## Repository About metadata (description + homepage)
+
+GitHub's **About** box (description + homepage URL on the repo page and org listing) is separate from topics. The canonical set lives in `seo-metadata.json`.
+
+| Field | Purpose |
+|-------|---------|
+| `description` | One-line pitch (shown in org repo list and search snippets) |
+| `homepage` | Live demo, product site, or primary docs entry point |
+
+```bash
+cd brand
+chmod +x apply-seo-metadata.sh
+
+./apply-seo-metadata.sh --dry-run
+./apply-seo-metadata.sh
+./apply-seo-metadata.sh --check
+./apply-seo-metadata.sh --repo prism
+```
+
+Edit `seo-metadata.json` when a repo goes public, ships a live URL, or the pitch changes. Pair with README/package.json `homepage` and `keywords` in the product repo itself.
