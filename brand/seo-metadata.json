@@ -130,5 +130,11 @@
     "repo": "cf-email-relay",
     "description": "Go SMTP bridge to Cloudflare Email Sending plus a Workers send-service. Transactional email on the CF stack.",
     "homepage": "https://skyphusion.net/blog/cf-email-relay/"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "crew-bus",
+    "description": "Cross-crew MCP message bus for coordinating multiple agent runtimes (Cursor and Claude Code). AGPL.",
+    "homepage": "https://github.com/skyphusion-labs/crew-bus"
   }
 ]
