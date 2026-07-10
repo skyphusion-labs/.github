@@ -239,5 +239,15 @@
     "accent2": "#06b6d4",
     "chip": "MONITOR",
     "motif": "org"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "crew-bus",
+    "display": "crew-bus",
+    "tagline": "Cross-crew MCP message bus for agent runtimes.",
+    "accent": "#38bdf8",
+    "accent2": "#818cf8",
+    "chip": "MCP",
+    "motif": "org"
   }
 ]

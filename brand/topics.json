@@ -506,5 +506,26 @@
       "vivijure",
       "vivijure-module"
     ]
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "crew-bus",
+    "family": "infra",
+    "topics": [
+      "agent-coordination",
+      "agents",
+      "agpl",
+      "claude-code",
+      "cloudflare-workers",
+      "crew-bus",
+      "cursor",
+      "d1",
+      "mcp",
+      "message-bus",
+      "model-context-protocol",
+      "open-source",
+      "self-hosted",
+      "typescript"
+    ]
   }
 ]
