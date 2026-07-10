@@ -209,5 +209,35 @@
     "chip": "@skyphusion",
     "motif": "org",
     "org_label": "SKYPHUSION"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "hollow-grid-go",
+    "display": "hollow-grid-go",
+    "tagline": "Go port of the Hollow Grid world server.",
+    "accent": "#4ade80",
+    "accent2": "#22d3ee",
+    "chip": "GO",
+    "motif": "mud"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "hollow-grid-py",
+    "display": "hollow-grid-py",
+    "tagline": "Python port of the Hollow Grid world server.",
+    "accent": "#4ade80",
+    "accent2": "#a78bfa",
+    "chip": "PY",
+    "motif": "mud"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "skyphusion-monitor",
+    "display": "skyphusion-monitor",
+    "tagline": "Edge uptime and security-posture monitor.",
+    "accent": "#60a5fa",
+    "accent2": "#06b6d4",
+    "chip": "MONITOR",
+    "motif": "org"
   }
 ]
