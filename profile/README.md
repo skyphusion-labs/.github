@@ -20,14 +20,19 @@ Everything we make is **open source and not for sale**. Free use forever, made w
 
 ### The Vivijure constellation: an AI film studio you own
 
-An AI film production studio for people who want to make movies on their own hardware, nearing its full public release. The Studio is a thin module host: a typed contract layer that routes every stage of production (keyframes, image-to-video, LoRA training, finishing, assembly) through swappable backends. Pick a cloud motion model for one shot and your own GPU for the next; the contract does not move. **GPU money goes to GPU work only**: concat, mux, captions, portrait prep, beat sync, and loudness normalization run on cheap always-on CPU containers you host ([vivijure/containers](https://github.com/skyphusion-labs/vivijure/tree/main/containers)).
+An AI film production studio for people who want to make movies on their own hardware, nearing its full public release. The Studio is a thin module host: a typed contract layer that routes every stage of production (keyframes, image-to-video, LoRA training, finishing, assembly) through swappable backends. **Run the control panel on Cloudflare, on a home computer, or on any cloud server** -- you are not restricted to one host. Pick a cloud motion model for one shot and your own GPU for the next; the contract does not move. **GPU money goes to GPU work only**: concat, mux, captions, portrait prep, beat sync, and loudness normalization run on cheap always-on CPU containers you host ([vivijure-cf/containers](https://github.com/skyphusion-labs/vivijure-cf/tree/main/containers)).
 
-- **[vivijure](https://github.com/skyphusion-labs/vivijure)**: the Studio itself. Storyboard, cast, render orchestration, and the module registry, on the Cloudflare Workers free tier. Live at [vivijure.com](https://vivijure.com) ([welcome demo](https://vivijure.skyphusion.org/welcome)).
-- **[vivijure/containers](https://github.com/skyphusion-labs/vivijure/tree/main/containers)**: the CPU media stack. Five stateless HTTP services on your container host, reached over Workers VPC: video-finish (concat/mux/captions), image-prep (portrait cutouts), audio-beat-sync, audio-master, and audio-mix (built; wiring pending).
-- **[slate](https://github.com/skyphusion-labs/slate)**: the writers' room. A Discord screenwriter that develops a story with your crew in natural conversation, keeps a structured storyboard, and hands the finished bundle to the Studio.
+- **[vivijure](https://github.com/skyphusion-labs/vivijure)**: the constellation map. Start here for the full layout. Product site: [vivijure.com](https://vivijure.com) ([welcome demo](https://vivijure.skyphusion.org/welcome)).
+- **[vivijure-cf](https://github.com/skyphusion-labs/vivijure-cf)**: Cloudflare Workers control panel (planner, cast, render orchestration, module registry) on the Workers free tier.
+- **[vivijure-local](https://github.com/skyphusion-labs/vivijure-local)**: the same control panel on a home PC or any cloud server (Node, SQLite, S3/MinIO). No Cloudflare account required.
+- **[vivijure-core](https://github.com/skyphusion-labs/vivijure-core)**: shared orchestration both hosts build on (module registry, film pipeline, Platform ICD).
+- **[vivijure-mcp](https://github.com/skyphusion-labs/vivijure-mcp)**: agent MCP that drives either control panel through the studio API.
+- **[vivijure-cf/containers](https://github.com/skyphusion-labs/vivijure-cf/tree/main/containers)**: the CPU media stack. Five stateless HTTP services: video-finish, image-prep, audio-beat-sync, audio-master, and audio-mix.
+- **[slate](https://github.com/skyphusion-labs/slate)**: the writers' room. A Discord screenwriter that develops a story with your crew in natural conversation, keeps a structured storyboard, and hands the finished bundle to vivijure-cf or vivijure-local.
 - **[vivijure-backend](https://github.com/skyphusion-labs/vivijure-backend)**: the datacenter GPU engine on RunPod serverless. Fully offline after a one-time model mirror, with a release gate that renders a real film before it promotes an image.
 - **[vivijure-local-12gb](https://github.com/skyphusion-labs/vivijure-local-12gb)** and **[vivijure-local-16gb](https://github.com/skyphusion-labs/vivijure-local-16gb)**: the own-GPU doors. Image-to-video on a single consumer card (LTX-Video at a proven 12GB floor; CogVideoX-5B-I2V at a proven 16GB floor), no rent.
 - **[vivijure-musetalk](https://github.com/skyphusion-labs/vivijure-musetalk)**, **[vivijure-upscale](https://github.com/skyphusion-labs/vivijure-upscale)**, **[vivijure-audio-upscale](https://github.com/skyphusion-labs/vivijure-audio-upscale)**: the finish engines. Lip-sync, video upscale, and speech cleanup, each a single-purpose GPU satellite.
+- **[vivijure-com](https://github.com/skyphusion-labs/vivijure-com)**: the product site and showcase at [vivijure.com](https://vivijure.com).
 
 The full map is in [the constellation write-up](https://skyphusion.net/blog/vivijure-constellation/).
 
@@ -82,7 +87,7 @@ Skyphusion Labs plans, develops, and runs its sprints differently than most shop
 
 ## The stack
 
-The control plane lives on Cloudflare: Workers, Durable Objects, D1, R2, Vectorize, AI Gateway, Workflows, Workers AI. GPU work runs on RunPod serverless and on our own silicon. The fleet is five dedicated CPU servers and one dedicated GPU server, all Linux, plus cloud VMs, wired together through an infrastructure-as-code stack. CI/CD is GitHub Actions end to end, images on GHCR. Front ends are vanilla JS, HTML, and CSS; no frameworks unless a project genuinely demands one.
+Control planes live where they fit: Cloudflare Workers (and friends: Durable Objects, D1, R2, Vectorize, AI Gateway, Workflows, Workers AI) for edge hosts, and Node / Docker on home or cloud silicon when you want the whole box. GPU work runs on RunPod serverless and on our own cards. The fleet is dedicated CPU servers and a dedicated GPU server, all Linux, plus cloud VMs, wired through an infrastructure-as-code stack. CI/CD is GitHub Actions end to end, images on GHCR. Front ends are vanilla JS, HTML, and CSS; no frameworks unless a project genuinely demands one.
 
 ---
 
