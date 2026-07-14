@@ -119,6 +119,23 @@ MOTIFS: dict[str, str] = {
         <path d="M70 110 H160 M70 140 H160 M70 170 H130" stroke="url(#motifGrad)" stroke-width="8" stroke-linecap="round"/>
       </g>
     """,
+    "core": """
+      <g transform="translate(30,25)">
+        <circle cx="120" cy="120" r="88" fill="none" stroke="url(#motifGrad)" stroke-width="10"/>
+        <circle cx="120" cy="120" r="52" fill="none" stroke="url(#motifGrad)" stroke-width="8" opacity="0.7"/>
+        <circle cx="120" cy="120" r="18" fill="url(#motifGrad)" opacity="0.85"/>
+        <path d="M120 32 V68 M120 172 V208 M32 120 H68 M172 120 H208" stroke="url(#motifGrad)" stroke-width="8" stroke-linecap="round" opacity="0.55"/>
+      </g>
+    """,
+    "mcp": """
+      <g transform="translate(25,30)">
+        <rect x="30" y="40" width="70" height="140" rx="14" fill="none" stroke="url(#motifGrad)" stroke-width="10"/>
+        <rect x="130" y="40" width="70" height="140" rx="14" fill="none" stroke="url(#motifGrad)" stroke-width="10"/>
+        <path d="M100 80 H130 M100 120 H130 M100 160 H130" stroke="url(#motifGrad)" stroke-width="8" stroke-linecap="round"/>
+        <circle cx="65" cy="90" r="10" fill="url(#motifGrad)"/>
+        <circle cx="165" cy="130" r="10" fill="url(#motifGrad)"/>
+      </g>
+    """,
 }
 
 
