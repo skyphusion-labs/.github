@@ -2,61 +2,85 @@
   {
     "owner": "skyphusion-labs",
     "repo": ".github",
-    "description": "Skyphusion Labs org profile: open-source tools for people who want to own what they run. Vivijure, Postern, Prism, and friends.",
+    "description": "Skyphusion Labs org profile: open-source tools you own. Vivijure (Cloudflare or self-hosted control panel), Postern, Prism, and friends.",
     "homepage": "https://github.skyphusion.org"
   },
   {
     "owner": "skyphusion-labs",
     "repo": "vivijure",
-    "description": "Self-hosted AGPL AI film studio on Cloudflare Workers: storyboard, cast, module registry, and your own GPU backends.",
+    "description": "The Vivijure constellation map: self-hosted AGPL AI film studio. Control panel on Cloudflare (vivijure-cf) or home/cloud server (vivijure-local); shared via vivijure-core.",
+    "homepage": "https://vivijure.com"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "vivijure-cf",
+    "description": "Vivijure Studio Cloudflare control panel: Workers host for storyboard, cast, modules, and render orchestration. Builds on vivijure-core; pairs with vivijure-local.",
+    "homepage": "https://vivijure.com"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "vivijure-local",
+    "description": "Vivijure Local: run the film studio control panel on a home computer or any cloud server (Node, SQLite, S3/MinIO). No Cloudflare required. Shares vivijure-core with vivijure-cf.",
+    "homepage": "https://vivijure.com"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "vivijure-core",
+    "description": "Vivijure Core: shared orchestration unifying vivijure-cf and vivijure-local (module registry, film pipeline, Platform ICD).",
+    "homepage": "https://vivijure.com"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "vivijure-mcp",
+    "description": "Vivijure Studio MCP: drive the film studio API from an agent. Works with both vivijure-cf and vivijure-local.",
     "homepage": "https://vivijure.com"
   },
   {
     "owner": "skyphusion-labs",
     "repo": "vivijure-backend",
-    "description": "RunPod GPU render engine for Vivijure: SDXL keyframes, Wan image-to-video, LoRA training, and ffmpeg film assembly.",
+    "description": "RunPod GPU render engine for Vivijure: SDXL keyframes, Wan image-to-video, LoRA training, ffmpeg assembly. Pairs with vivijure-cf or vivijure-local.",
     "homepage": "https://vivijure.com"
   },
   {
     "owner": "skyphusion-labs",
     "repo": "vivijure-com",
-    "description": "Promotional site and showcase for Vivijure, the self-hosted AI film studio you own.",
+    "description": "Product site and showcase for Vivijure: the self-hosted AGPL AI film studio. Control panel on Cloudflare or any server.",
     "homepage": "https://vivijure.com"
   },
   {
     "owner": "skyphusion-labs",
     "repo": "vivijure-local-12gb",
-    "description": "Consumer-GPU Vivijure backend: LTX-Video image-to-video on a 12GB card. Homelab motion, no cloud rent. AGPL.",
+    "description": "Consumer-GPU Vivijure backend: LTX-Video i2v on a 12GB card. Homelab motion for vivijure-cf or vivijure-local. AGPL.",
     "homepage": "https://vivijure.com"
   },
   {
     "owner": "skyphusion-labs",
     "repo": "vivijure-local-16gb",
-    "description": "Higher-fidelity consumer-GPU Vivijure backend: CogVideoX-5B-I2V on a 16GB card. AGPL homelab motion.",
+    "description": "Higher-fidelity consumer-GPU Vivijure backend: CogVideoX-5B-I2V on a 16GB card. Works with vivijure-cf or vivijure-local. AGPL.",
     "homepage": "https://vivijure.com"
   },
   {
     "owner": "skyphusion-labs",
     "repo": "vivijure-musetalk",
-    "description": "MuseTalk lip-sync finish engine for Vivijure: audio-driven talking heads on RunPod GPU.",
+    "description": "MuseTalk lip-sync finish engine for Vivijure on RunPod GPU. Pairs with vivijure-cf or vivijure-local.",
     "homepage": "https://vivijure.com"
   },
   {
     "owner": "skyphusion-labs",
     "repo": "vivijure-upscale",
-    "description": "Real-ESRGAN CUDA video upscale finish module for Vivijure on RunPod serverless GPU.",
+    "description": "Real-ESRGAN CUDA video upscale finish module for Vivijure on RunPod. Pairs with vivijure-cf or vivijure-local.",
     "homepage": "https://vivijure.com"
   },
   {
     "owner": "skyphusion-labs",
     "repo": "vivijure-audio-upscale",
-    "description": "GPU speech enhancement finish engine for Vivijure (resemble-enhance on RunPod).",
+    "description": "GPU speech enhancement finish engine for Vivijure (resemble-enhance on RunPod). Pairs with vivijure-cf or vivijure-local.",
     "homepage": "https://vivijure.com"
   },
   {
     "owner": "skyphusion-labs",
     "repo": "slate",
-    "description": "Collaborative AI screenwriter for Discord: develop storyboards in chat and hand off to Vivijure Studio.",
+    "description": "Slate: Discord screenwriter for Vivijure. Co-write a film in chat, then hand it to vivijure-cf or vivijure-local to render.",
     "homepage": "https://vivijure.com"
   },
   {
@@ -116,7 +140,7 @@
   {
     "owner": "skyphusion-labs",
     "repo": "skyphusion-org",
-    "description": "Intro site for skyphusion.org: who Skyphusion Labs is and what we make. Vanilla HTML on Cloudflare Workers.",
+    "description": "skyphusion.org: Skyphusion Labs intro site. Open-source tools you own, including Vivijure (Cloudflare or self-hosted control panel).",
     "homepage": "https://skyphusion.org"
   },
   {
