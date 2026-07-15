@@ -230,16 +230,6 @@
     "motif": "blog"
   },
   {
-    "owner": "skyphusion-labs",
-    "repo": "cf-email-relay",
-    "display": "cf-email-relay",
-    "tagline": "Go SMTP bridge to Cloudflare Email Sending.",
-    "accent": "#22d3ee",
-    "accent2": "#f97316",
-    "chip": "RELAY",
-    "motif": "email"
-  },
-  {
     "owner": "skyphusion",
     "repo": "skyphusion",
     "display": "Conrad Rockenhaus",

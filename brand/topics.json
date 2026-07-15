@@ -42,28 +42,6 @@
   },
   {
     "owner": "skyphusion-labs",
-    "repo": "cf-email-relay",
-    "family": "postern",
-    "topics": [
-      "cloudflare",
-      "cloudflare-email-sending",
-      "cloudflare-workers",
-      "email",
-      "golang",
-      "mail",
-      "open-source",
-      "postern",
-      "relay-bridge",
-      "self-hosted",
-      "serverless",
-      "smtp",
-      "smtp-relay",
-      "transactional-email",
-      "typescript"
-    ]
-  },
-  {
-    "owner": "skyphusion-labs",
     "repo": "common-thread",
     "family": "common-thread",
     "topics": [
