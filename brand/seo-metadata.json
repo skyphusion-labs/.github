@@ -33,7 +33,7 @@
     "owner": "skyphusion-labs",
     "repo": "hollow-grid-py",
     "description": "Python world-server port for The Hollow Grid federated MUD: a Grid node speaking the language-agnostic wire protocol.",
-    "homepage": "https://hollow.skyphusion.org"
+    "homepage": ""
   },
   {
     "owner": "skyphusion-labs",
