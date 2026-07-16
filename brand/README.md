@@ -104,7 +104,17 @@ See also [distribution.md](distribution.md) for npm, PyPI, and GHCR publish targ
 
 ### CI drift gate
 
-Workflow [`.github/workflows/oss-discoverability-drift.yml`](../.github/workflows/oss-discoverability-drift.yml) runs on PRs that touch the catalogs, on merges to `main`, weekly (Mondays 14:00 UTC), and on demand. It fails if live GitHub topics or About metadata differ from `topics.json` / `seo-metadata.json`.
+Workflow [`.github/workflows/oss-discoverability-drift.yml`](../.github/workflows/oss-discoverability-drift.yml) runs on PRs that touch the catalogs, on merges to `main`, weekly (Mondays 14:00 UTC), and on demand. It fails if:
+
+1. A public non-archived org repo is **missing** from `topics.json` or `seo-metadata.json` (reverse coverage; see #17).
+2. Live GitHub topics or About metadata differ from the catalog rows that do exist.
+
+```bash
+cd brand
+./check-catalog-coverage.sh   # every public repo has catalog rows
+./update-topics.sh --check
+./apply-seo-metadata.sh --check
+```
 
 After editing a catalog, apply live state before merge:
 
