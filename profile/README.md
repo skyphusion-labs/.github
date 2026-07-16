@@ -10,7 +10,7 @@ Everything we make is **open source and not for sale**. Free use forever, made w
 - Conrad's engineering blog: [skyphusion.net](https://skyphusion.net)
 - Conrad's GitHub page: [github.skyphusion.net](https://github.skyphusion.net)
 - This page on the web: [github.skyphusion.org](https://github.skyphusion.org)
-- Vivijure: [vivijure.com](https://vivijure.com) ([welcome demo](https://vivijure.skyphusion.org/welcome))
+- Vivijure: [vivijure.com](https://vivijure.com) ([live demo](https://demo.vivijure.com))
 - X: [x.com/skyphusion](https://x.com/skyphusion)
 - Email: [conrad@skyphusion.org](mailto:conrad@skyphusion.org)
 
@@ -22,7 +22,7 @@ Everything we make is **open source and not for sale**. Free use forever, made w
 
 An AI film production studio for people who want to make movies on their own hardware, nearing its full public release. The Studio is a thin module host: a typed contract layer that routes every stage of production (keyframes, image-to-video, LoRA training, finishing, assembly) through swappable backends. **Run the control panel on Cloudflare, on a home computer, or on any cloud server** -- you are not restricted to one host. Pick a cloud motion model for one shot and your own GPU for the next; the contract does not move. **GPU money goes to GPU work only**: concat, mux, captions, portrait prep, beat sync, and loudness normalization run on cheap always-on CPU containers you host ([vivijure-cf/containers](https://github.com/skyphusion-labs/vivijure-cf/tree/main/containers)).
 
-- **[vivijure](https://github.com/skyphusion-labs/vivijure)**: the constellation map. Start here for the full layout. Product site: [vivijure.com](https://vivijure.com) ([welcome demo](https://vivijure.skyphusion.org/welcome)).
+- **[vivijure](https://github.com/skyphusion-labs/vivijure)**: the constellation map. Start here for the full layout. Product site: [vivijure.com](https://vivijure.com) ([live demo](https://demo.vivijure.com)).
 - **[vivijure-cf](https://github.com/skyphusion-labs/vivijure-cf)**: Cloudflare Workers control panel (planner, cast, render orchestration, module registry) on the Workers free tier.
 - **[vivijure-local](https://github.com/skyphusion-labs/vivijure-local)**: the same control panel on a home PC or any cloud server (Node, SQLite, S3/MinIO). No Cloudflare account required.
 - **[vivijure-core](https://github.com/skyphusion-labs/vivijure-core)**: shared orchestration both hosts build on (module registry, film pipeline, Platform ICD).
@@ -110,7 +110,7 @@ Watch this space.
   <a href="https://github.skyphusion.net">github.skyphusion.net</a><span class="sep"> / </span>
   <a href="https://github.com/skyphusion-labs">github.com/skyphusion-labs</a><span class="sep"> / </span>
   <a href="https://vivijure.com">vivijure.com</a><span class="sep"> / </span>
-  <a href="https://vivijure.skyphusion.org/welcome">Vivijure welcome</a><span class="sep"> / </span>
+  <a href="https://demo.vivijure.com">Vivijure demo</a><span class="sep"> / </span>
   <a href="https://x.com/skyphusion">x.com/skyphusion</a><span class="sep"> / </span>
   <a href="mailto:conrad@skyphusion.org">conrad@skyphusion.org</a>
 </p>
