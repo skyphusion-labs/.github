@@ -61,6 +61,27 @@
   },
   {
     "owner": "skyphusion-labs",
+    "repo": "crew-bus",
+    "family": "infra",
+    "topics": [
+      "agent-coordination",
+      "agents",
+      "agpl",
+      "claude-code",
+      "cloudflare-workers",
+      "crew-bus",
+      "cursor",
+      "d1",
+      "mcp",
+      "message-bus",
+      "model-context-protocol",
+      "open-source",
+      "self-hosted",
+      "typescript"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
     "repo": "hollow-grid-go",
     "family": "hollow-grid",
     "topics": [
@@ -73,6 +94,26 @@
       "mud",
       "multiplayer",
       "open-source",
+      "self-hosted",
+      "text-game",
+      "the-hollow-grid",
+      "websocket"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "hollow-grid-py",
+    "family": "hollow-grid",
+    "topics": [
+      "agents",
+      "docker",
+      "federated",
+      "game-server",
+      "hollow-grid",
+      "mud",
+      "multiplayer",
+      "open-source",
+      "python",
       "self-hosted",
       "text-game",
       "the-hollow-grid",
@@ -311,94 +352,6 @@
   },
   {
     "owner": "skyphusion-labs",
-    "repo": "vivijure-cf",
-    "family": "vivijure",
-    "topics": [
-      "agpl",
-      "ai-film",
-      "ai-video",
-      "cloudflare-d1",
-      "cloudflare-r2",
-      "cloudflare-workers",
-      "control-plane",
-      "filmmaking",
-      "generative-ai",
-      "module-host",
-      "self-hosted",
-      "serverless",
-      "storyboard",
-      "typescript",
-      "video-generation",
-      "vivijure",
-      "vivijure-studio"
-    ]
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "vivijure-local",
-    "family": "vivijure",
-    "topics": [
-      "agpl",
-      "ai-film",
-      "ai-video",
-      "control-plane",
-      "docker",
-      "docker-compose",
-      "filmmaking",
-      "generative-ai",
-      "homelab",
-      "module-host",
-      "nodejs",
-      "self-hosted",
-      "sqlite",
-      "storyboard",
-      "typescript",
-      "video-generation",
-      "vivijure",
-      "vivijure-studio"
-    ]
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "vivijure-core",
-    "family": "vivijure",
-    "topics": [
-      "agpl",
-      "ai-film",
-      "ai-video",
-      "film-pipeline",
-      "library",
-      "module-host",
-      "npm-package",
-      "open-source",
-      "orchestration",
-      "self-hosted",
-      "typescript",
-      "video-generation",
-      "vivijure"
-    ]
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "vivijure-mcp",
-    "family": "vivijure",
-    "topics": [
-      "agents",
-      "agpl",
-      "ai-agents",
-      "ai-film",
-      "cloudflare-workers",
-      "mcp",
-      "model-context-protocol",
-      "self-hosted",
-      "typescript",
-      "video-generation",
-      "vivijure",
-      "vivijure-studio"
-    ]
-  },
-  {
-    "owner": "skyphusion-labs",
     "repo": "vivijure-audio-upscale",
     "family": "vivijure",
     "topics": [
@@ -447,6 +400,30 @@
   },
   {
     "owner": "skyphusion-labs",
+    "repo": "vivijure-cf",
+    "family": "vivijure",
+    "topics": [
+      "agpl",
+      "ai-film",
+      "ai-video",
+      "cloudflare-d1",
+      "cloudflare-r2",
+      "cloudflare-workers",
+      "control-plane",
+      "filmmaking",
+      "generative-ai",
+      "module-host",
+      "self-hosted",
+      "serverless",
+      "storyboard",
+      "typescript",
+      "video-generation",
+      "vivijure",
+      "vivijure-studio"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
     "repo": "vivijure-com",
     "family": "vivijure",
     "topics": [
@@ -469,6 +446,51 @@
       "vanilla-js",
       "video-generation",
       "vivijure"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "vivijure-core",
+    "family": "vivijure",
+    "topics": [
+      "agpl",
+      "ai-film",
+      "ai-video",
+      "film-pipeline",
+      "library",
+      "module-host",
+      "npm-package",
+      "open-source",
+      "orchestration",
+      "self-hosted",
+      "typescript",
+      "video-generation",
+      "vivijure"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "vivijure-local",
+    "family": "vivijure",
+    "topics": [
+      "agpl",
+      "ai-film",
+      "ai-video",
+      "control-plane",
+      "docker",
+      "docker-compose",
+      "filmmaking",
+      "generative-ai",
+      "homelab",
+      "module-host",
+      "nodejs",
+      "self-hosted",
+      "sqlite",
+      "storyboard",
+      "typescript",
+      "video-generation",
+      "vivijure",
+      "vivijure-studio"
     ]
   },
   {
@@ -527,6 +549,25 @@
   },
   {
     "owner": "skyphusion-labs",
+    "repo": "vivijure-mcp",
+    "family": "vivijure",
+    "topics": [
+      "agents",
+      "agpl",
+      "ai-agents",
+      "ai-film",
+      "cloudflare-workers",
+      "mcp",
+      "model-context-protocol",
+      "self-hosted",
+      "typescript",
+      "video-generation",
+      "vivijure",
+      "vivijure-studio"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
     "repo": "vivijure-musetalk",
     "family": "vivijure",
     "topics": [
@@ -572,27 +613,6 @@
       "video-upscaling",
       "vivijure",
       "vivijure-module"
-    ]
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "crew-bus",
-    "family": "infra",
-    "topics": [
-      "agent-coordination",
-      "agents",
-      "agpl",
-      "claude-code",
-      "cloudflare-workers",
-      "crew-bus",
-      "cursor",
-      "d1",
-      "mcp",
-      "message-bus",
-      "model-context-protocol",
-      "open-source",
-      "self-hosted",
-      "typescript"
     ]
   }
 ]

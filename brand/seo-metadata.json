@@ -7,32 +7,98 @@
   },
   {
     "owner": "skyphusion-labs",
+    "repo": "SidVicious_exe",
+    "description": "Punk-rock Discord roadie: Claude, web search, Vectorize knowledge base, and Workers AI image generation.",
+    "homepage": "https://github.com/skyphusion-labs/SidVicious_exe"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "common-thread",
+    "description": "Sockpuppet attribution methodology and reference implementation for litigants, journalists, and OSINT practitioners.",
+    "homepage": "https://common-thread.skyphusion.org"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "crew-bus",
+    "description": "Cross-crew MCP message bus for coordinating multiple agent runtimes (Cursor and Claude Code). AGPL.",
+    "homepage": "https://github.com/skyphusion-labs/crew-bus"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "hollow-grid-go",
+    "description": "Go world-server port for The Hollow Grid federated MUD: a Grid node speaking the language-agnostic wire protocol.",
+    "homepage": "https://hollow.skyphusion.org"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "hollow-grid-py",
+    "description": "Python world-server port for The Hollow Grid federated MUD: a Grid node speaking the language-agnostic wire protocol.",
+    "homepage": ""
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "mud-bots",
+    "description": "AI players for The Hollow Grid: LLM bots on Workers AI that make real moral choices via structured game state.",
+    "homepage": "https://hollow.skyphusion.org"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "postern",
+    "description": "Self-hostable email for humans and agents on Cloudflare: send, receive, search, MCP, IMAP, and webmail.",
+    "homepage": "https://github.com/skyphusion-labs/postern"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "prism",
+    "description": "Multimodal AI playground in one Cloudflare Worker: 35 chat models, voice chat, image/video/music, RAG, and web search.",
+    "homepage": "https://play.skyphusion.org"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "search-mcp",
+    "description": "Cloudflare AI Search toolkit: MCP server, streaming /ask Worker, docs widget, and git-to-R2 corpus sync. AGPL.",
+    "homepage": "https://github.com/skyphusion-labs/search-mcp"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "skyphusion-monitor",
+    "description": "External security-posture and uptime monitor (Cloudflare Worker cron). Probes public surfaces; alerts to ntfy.",
+    "homepage": "https://github.com/skyphusion-labs/skyphusion-monitor"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "skyphusion-net",
+    "description": "Engineering blog of Conrad Rockenhaus (Skyphusion): Astro 7 on Cloudflare Workers, markdown-authored.",
+    "homepage": "https://skyphusion.net"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "skyphusion-org",
+    "description": "skyphusion.org: Skyphusion Labs intro site. Open-source tools you own, including Vivijure (Cloudflare or self-hosted control panel).",
+    "homepage": "https://skyphusion.org"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "slate",
+    "description": "Slate: Discord screenwriter for Vivijure. Co-write a film in chat, then hand it to vivijure-cf or vivijure-local to render.",
+    "homepage": "https://vivijure.com"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "the-hollow-grid",
+    "description": "Federated post-apocalyptic MUD on Cloudflare Workers and Durable Objects. Play free at hollow and dustfall.",
+    "homepage": "https://hollow.skyphusion.org"
+  },
+  {
+    "owner": "skyphusion-labs",
     "repo": "vivijure",
     "description": "The Vivijure constellation map: self-hosted AGPL AI film studio. Control panel on Cloudflare (vivijure-cf) or home/cloud server (vivijure-local); shared via vivijure-core.",
     "homepage": "https://vivijure.com"
   },
   {
     "owner": "skyphusion-labs",
-    "repo": "vivijure-cf",
-    "description": "Vivijure Studio Cloudflare control panel: Workers host for storyboard, cast, modules, and render orchestration. Builds on vivijure-core; pairs with vivijure-local.",
-    "homepage": "https://vivijure.com"
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "vivijure-local",
-    "description": "Vivijure Local: run the film studio control panel on a home computer or any cloud server (Node, SQLite, S3/MinIO). No Cloudflare required. Shares vivijure-core with vivijure-cf.",
-    "homepage": "https://vivijure.com"
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "vivijure-core",
-    "description": "Vivijure Core: shared orchestration unifying vivijure-cf and vivijure-local (module registry, film pipeline, Platform ICD).",
-    "homepage": "https://vivijure.com"
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "vivijure-mcp",
-    "description": "Vivijure Studio MCP: drive the film studio API from an agent. Works with both vivijure-cf and vivijure-local.",
+    "repo": "vivijure-audio-upscale",
+    "description": "GPU speech enhancement finish engine for Vivijure (resemble-enhance on RunPod). Pairs with vivijure-cf or vivijure-local.",
     "homepage": "https://vivijure.com"
   },
   {
@@ -43,8 +109,26 @@
   },
   {
     "owner": "skyphusion-labs",
+    "repo": "vivijure-cf",
+    "description": "Vivijure Studio Cloudflare control panel: Workers host for storyboard, cast, modules, and render orchestration. Builds on vivijure-core; pairs with vivijure-local.",
+    "homepage": "https://vivijure.com"
+  },
+  {
+    "owner": "skyphusion-labs",
     "repo": "vivijure-com",
     "description": "Product site and showcase for Vivijure: the self-hosted AGPL AI film studio. Control panel on Cloudflare or any server.",
+    "homepage": "https://vivijure.com"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "vivijure-core",
+    "description": "Vivijure Core: shared orchestration unifying vivijure-cf and vivijure-local (module registry, film pipeline, Platform ICD).",
+    "homepage": "https://vivijure.com"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "vivijure-local",
+    "description": "Vivijure Local: run the film studio control panel on a home computer or any cloud server (Node, SQLite, S3/MinIO). No Cloudflare required. Shares vivijure-core with vivijure-cf.",
     "homepage": "https://vivijure.com"
   },
   {
@@ -61,6 +145,12 @@
   },
   {
     "owner": "skyphusion-labs",
+    "repo": "vivijure-mcp",
+    "description": "Vivijure Studio MCP: drive the film studio API from an agent. Works with both vivijure-cf and vivijure-local.",
+    "homepage": "https://vivijure.com"
+  },
+  {
+    "owner": "skyphusion-labs",
     "repo": "vivijure-musetalk",
     "description": "MuseTalk lip-sync finish engine for Vivijure on RunPod GPU. Pairs with vivijure-cf or vivijure-local.",
     "homepage": "https://vivijure.com"
@@ -70,89 +160,5 @@
     "repo": "vivijure-upscale",
     "description": "Real-ESRGAN CUDA video upscale finish module for Vivijure on RunPod. Pairs with vivijure-cf or vivijure-local.",
     "homepage": "https://vivijure.com"
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "vivijure-audio-upscale",
-    "description": "GPU speech enhancement finish engine for Vivijure (resemble-enhance on RunPod). Pairs with vivijure-cf or vivijure-local.",
-    "homepage": "https://vivijure.com"
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "slate",
-    "description": "Slate: Discord screenwriter for Vivijure. Co-write a film in chat, then hand it to vivijure-cf or vivijure-local to render.",
-    "homepage": "https://vivijure.com"
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "prism",
-    "description": "Multimodal AI playground in one Cloudflare Worker: 35 chat models, voice chat, image/video/music, RAG, and web search.",
-    "homepage": "https://play.skyphusion.org"
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "postern",
-    "description": "Self-hostable email for humans and agents on Cloudflare: send, receive, search, MCP, IMAP, and webmail.",
-    "homepage": "https://github.com/skyphusion-labs/postern"
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "search-mcp",
-    "description": "Cloudflare AI Search toolkit: MCP server, streaming /ask Worker, docs widget, and git-to-R2 corpus sync. AGPL.",
-    "homepage": "https://github.com/skyphusion-labs/search-mcp"
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "the-hollow-grid",
-    "description": "Federated post-apocalyptic MUD on Cloudflare Workers and Durable Objects. Play free at hollow and dustfall.",
-    "homepage": "https://hollow.skyphusion.org"
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "mud-bots",
-    "description": "AI players for The Hollow Grid: LLM bots on Workers AI that make real moral choices via structured game state.",
-    "homepage": "https://hollow.skyphusion.org"
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "hollow-grid-go",
-    "description": "Go world-server port for The Hollow Grid federated MUD: a Grid node speaking the language-agnostic wire protocol.",
-    "homepage": "https://hollow.skyphusion.org"
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "common-thread",
-    "description": "Sockpuppet attribution methodology and reference implementation for litigants, journalists, and OSINT practitioners.",
-    "homepage": "https://common-thread.skyphusion.org"
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "SidVicious_exe",
-    "description": "Punk-rock Discord roadie: Claude, web search, Vectorize knowledge base, and Workers AI image generation.",
-    "homepage": "https://github.com/skyphusion-labs/SidVicious_exe"
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "skyphusion-net",
-    "description": "Engineering blog of Conrad Rockenhaus (Skyphusion): Astro 7 on Cloudflare Workers, markdown-authored.",
-    "homepage": "https://skyphusion.net"
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "skyphusion-org",
-    "description": "skyphusion.org: Skyphusion Labs intro site. Open-source tools you own, including Vivijure (Cloudflare or self-hosted control panel).",
-    "homepage": "https://skyphusion.org"
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "skyphusion-monitor",
-    "description": "External security-posture and uptime monitor (Cloudflare Worker cron). Probes public surfaces; alerts to ntfy.",
-    "homepage": "https://github.com/skyphusion-labs/skyphusion-monitor"
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "crew-bus",
-    "description": "Cross-crew MCP message bus for coordinating multiple agent runtimes (Cursor and Claude Code). AGPL.",
-    "homepage": "https://github.com/skyphusion-labs/crew-bus"
   }
 ]

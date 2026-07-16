@@ -10,6 +10,7 @@ on:
       - 'brand/seo-metadata.json'
       - 'brand/update-topics.sh'
       - 'brand/apply-seo-metadata.sh'
+      - 'brand/check-catalog-coverage.sh'
       - '.github/workflows/oss-discoverability-drift.yml'
   push:
     branches: [main]
@@ -18,6 +19,7 @@ on:
       - 'brand/seo-metadata.json'
       - 'brand/update-topics.sh'
       - 'brand/apply-seo-metadata.sh'
+      - 'brand/check-catalog-coverage.sh'
       - '.github/workflows/oss-discoverability-drift.yml'
   schedule:
     # Weekly: catch drift from GitHub Settings edits outside the catalog.
@@ -36,6 +38,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+
+      - name: Verify every public repo is in the catalogs
+        working-directory: brand
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: ./check-catalog-coverage.sh
 
       - name: Verify topics catalog matches GitHub
         working-directory: brand
