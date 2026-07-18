@@ -11,6 +11,7 @@ Create the [`@skyphusion` npm organization](https://www.npmjs.com/org/create) an
 | [`@skyphusion/search-mcp`](https://www.npmjs.com/package/@skyphusion/search-mcp) | [search-mcp](https://github.com/skyphusion-labs/search-mcp) | `npm install @skyphusion/search-mcp` | Corpus sync CLIs (`search-mcp-sync`, `search-mcp-sync-run`), ask-widget assets |
 | [`@skyphusion/hollow-grid-bot`](https://www.npmjs.com/package/@skyphusion/hollow-grid-bot) | [mud-bots](https://github.com/skyphusion-labs/mud-bots) | `npm install @skyphusion/hollow-grid-bot` | Hollow Grid AI player (`hollow-grid-bot` bin) |
 | [`@skyphusion/sidvicious-exe`](https://www.npmjs.com/package/@skyphusion/sidvicious-exe) | [SidVicious_exe](https://github.com/skyphusion-labs/SidVicious_exe) | `npx @skyphusion/sidvicious-exe` | Discord roadie (`sidvicious` bin); search-worker stays deploy-from-git |
+| [`@skyphusion/create-prism`](https://www.npmjs.com/package/@skyphusion/create-prism) | [prism](https://github.com/skyphusion-labs/prism) | `npm create @skyphusion/prism` | Scaffolder that bootstraps a new prism deployment (`create-prism` bin); the prism Worker itself stays deploy-from-git |
 
 Release mechanics: bump `version` in the package manifest, tag GitHub Release `vX.Y.Z`, workflow publishes on release publish.
 
@@ -32,7 +33,7 @@ GPU modules, bots, and fleet services publish to **`ghcr.io/skyphusion-labs/<ima
 
 ## Not on npm/PyPI (deploy from git)
 
-Cloudflare Workers and full stacks (vivijure, prism, postern worker, the-hollow-grid, common-thread) deploy from a clone via `wrangler` / project runbooks. Use the repo README and `docs/DEPLOY.md`; npm/PyPI only cover CLI/library slices where that helps adopters.
+Cloudflare Workers and full stacks (vivijure, postern worker, the-hollow-grid, common-thread) deploy from a clone via `wrangler` / project runbooks. Use the repo README and `docs/DEPLOY.md`; npm/PyPI only cover CLI/library slices where that helps adopters.
 
 ## Adding a new channel
 
