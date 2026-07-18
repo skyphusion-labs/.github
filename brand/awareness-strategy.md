@@ -8,7 +8,9 @@ marketing team**. A channel only gets a GO if the cadence survives one busy pers
 
 **Standing rule (unchanged):** Hacker News post TEXT is Conrad-only, always. Crew lane =
 repo/launch readiness, never drafting or editing HN copy. That rule is restated where relevant
-below.
+below. And no upvote solicitation or coordinated voting, ever: HN bans vote manipulation harder
+than it dings AI-taint, so asking anyone (crew, friends, alt accounts) to upvote is the bigger
+ban risk and is off the table.
 
 ## A. Awareness channels, ranked
 
@@ -36,6 +38,11 @@ The MCP-registry row deserves emphasis: `search-mcp`, `postern` (agent mailboxes
 `crew-bus` are genuinely differentiated MCP servers, MCP directories are young and thin, and
 early listings compound. Cheapest high-fit reach on this table.
 
+The awesome-list row (3) carries one etiquette caveat: some lists gate on project age and
+traction and frown on authors self-submitting brand-new projects (awesome-selfhosted is the
+strictest). Check each list's contribution bar before a crew PR, or the submission bounces and
+burns goodwill.
+
 ## B. Business / creator accounts (handle: `skyphusion` everywhere)
 
 | Platform | Call | Why / notes |
@@ -51,7 +58,10 @@ early listings compound. Cheapest high-fit reach on this table.
 | Threads / Facebook / Instagram / X-alternatives beyond the two above | **SKIP** | Audience mismatch or pure fragmentation. |
 
 Account creation is Conrad's action (web signups + verification); crew prepares bios/links
-from `profile/README.md` so every profile says the same thing.
+from `profile/README.md` so every profile says the same thing. Posting from any identity-bearing
+account is Conrad-operated, or clearly brand-voice with affiliation disclosed; the crew never
+posts under a persona that reads as a private person without that disclosure (the HN
+text-is-Conrad's guardrail, extended to every account).
 
 ## C. SEO -- intent-driven improvements
 
