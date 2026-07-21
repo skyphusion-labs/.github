@@ -82,6 +82,47 @@
   },
   {
     "owner": "skyphusion-labs",
+    "repo": "hollow-grid-asm",
+    "family": "hollow-grid",
+    "topics": [
+      "agents",
+      "assembly",
+      "docker",
+      "federated",
+      "game-server",
+      "hollow-grid",
+      "mud",
+      "multiplayer",
+      "nasm",
+      "open-source",
+      "self-hosted",
+      "text-game",
+      "the-hollow-grid",
+      "websocket"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "hollow-grid-c",
+    "family": "hollow-grid",
+    "topics": [
+      "agents",
+      "c",
+      "docker",
+      "federated",
+      "game-server",
+      "hollow-grid",
+      "mud",
+      "multiplayer",
+      "open-source",
+      "self-hosted",
+      "text-game",
+      "the-hollow-grid",
+      "websocket"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
     "repo": "hollow-grid-go",
     "family": "hollow-grid",
     "topics": [
@@ -444,6 +485,30 @@
       "static-site",
       "typescript",
       "vanilla-js",
+      "video-generation",
+      "vivijure"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "vivijure-control-plane",
+    "family": "vivijure",
+    "topics": [
+      "agpl",
+      "ai-film",
+      "ai-video",
+      "cloudflare-workers",
+      "control-plane",
+      "filmmaking",
+      "generative-ai",
+      "multi-tenant",
+      "open-source",
+      "provisioning",
+      "saas",
+      "self-hosted",
+      "serverless",
+      "tenancy",
+      "typescript",
       "video-generation",
       "vivijure"
     ]
