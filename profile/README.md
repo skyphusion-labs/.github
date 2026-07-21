@@ -12,6 +12,7 @@ Everything we make is **open source and not for sale**. Free use forever, made w
 - This page on the web: [github.skyphusion.org](https://github.skyphusion.org)
 - Vivijure: [vivijure.com](https://vivijure.com) ([live demo](https://demo.vivijure.com))
 - X: [x.com/skyphusion](https://x.com/skyphusion)
+- LinkedIn: [linkedin.com/in/skyphusion](https://www.linkedin.com/in/skyphusion/)
 - Email: [conrad@skyphusion.org](mailto:conrad@skyphusion.org)
 
 ---
@@ -112,6 +113,7 @@ Watch this space.
   <a href="https://vivijure.com">vivijure.com</a><span class="sep"> / </span>
   <a href="https://demo.vivijure.com">Vivijure demo</a><span class="sep"> / </span>
   <a href="https://x.com/skyphusion">x.com/skyphusion</a><span class="sep"> / </span>
+  <a href="https://www.linkedin.com/in/skyphusion/">LinkedIn</a><span class="sep"> / </span>
   <a href="mailto:conrad@skyphusion.org">conrad@skyphusion.org</a>
 </p>
 
