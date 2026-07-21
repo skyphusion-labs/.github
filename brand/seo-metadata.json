@@ -25,6 +25,18 @@
   },
   {
     "owner": "skyphusion-labs",
+    "repo": "hollow-grid-asm",
+    "description": "Basalt Relay: Hollow Grid world server in x86-64 assembly with a libwebsockets C shim.",
+    "homepage": "https://hollow.skyphusion.org"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "hollow-grid-c",
+    "description": "C world-server port for The Hollow Grid federated MUD: a Grid node speaking the language-agnostic wire protocol.",
+    "homepage": "https://github.com/skyphusion-labs/the-hollow-grid"
+  },
+  {
+    "owner": "skyphusion-labs",
     "repo": "hollow-grid-go",
     "description": "Go world-server port for The Hollow Grid federated MUD: a Grid node speaking the language-agnostic wire protocol.",
     "homepage": "https://hollow.skyphusion.org"
@@ -117,6 +129,12 @@
     "owner": "skyphusion-labs",
     "repo": "vivijure-com",
     "description": "Product site and showcase for Vivijure: the self-hosted AGPL AI film studio. Control panel on Cloudflare or any server.",
+    "homepage": "https://vivijure.com"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "vivijure-control-plane",
+    "description": "Hosted control plane for Vivijure Studio: tenancy, onboarding, and provisioning.",
     "homepage": "https://vivijure.com"
   },
   {

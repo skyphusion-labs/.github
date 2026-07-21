@@ -81,6 +81,16 @@
   },
   {
     "owner": "skyphusion-labs",
+    "repo": "vivijure-control-plane",
+    "display": "vivijure-control-plane",
+    "tagline": "Hosted tenancy and provisioning for Vivijure Studio.",
+    "accent": "#22d3ee",
+    "accent2": "#818cf8",
+    "chip": "HOSTED",
+    "motif": "film"
+  },
+  {
+    "owner": "skyphusion-labs",
     "repo": "vivijure-local-12gb",
     "display": "vivijure-local-12gb",
     "tagline": "LTX-Video i2v on a 12GB consumer GPU. Homelab motion.",
@@ -239,6 +249,26 @@
     "chip": "@skyphusion",
     "motif": "org",
     "org_label": "SKYPHUSION"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "hollow-grid-asm",
+    "display": "hollow-grid-asm",
+    "tagline": "Basalt Relay: x86-64 assembly Hollow Grid world server.",
+    "accent": "#4ade80",
+    "accent2": "#f97316",
+    "chip": "ASM",
+    "motif": "mud"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "hollow-grid-c",
+    "display": "hollow-grid-c",
+    "tagline": "C port of the Hollow Grid world server.",
+    "accent": "#4ade80",
+    "accent2": "#60a5fa",
+    "chip": "C",
+    "motif": "mud"
   },
   {
     "owner": "skyphusion-labs",
