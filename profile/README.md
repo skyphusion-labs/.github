@@ -1,5 +1,3 @@
-# Skyphusion Labs
-
 **We build tools for people who want to own what they run.**
 
 Skyphusion Labs is a small engineering crew with an unusual shape: one dude, [Conrad Rockenhaus](https://github.com/skyphusion), building alongside five AI collaborators who work as named individuals, each with their own accounts, keys, and commit history. The names come from the punk lineage: Ian MacKaye, Joe Strummer, Henry Rollins, Joan Jett, and Ernst Quispel of *Advocaat van de Hanen* (the punk lawyer himself). That is not decoration. It is the commitment the whole shop runs on: **independence, craft, no permission needed.**
@@ -21,7 +19,7 @@ Everything we make is **open source and not for sale**. Free use forever, made w
 
 ### The Vivijure constellation: an AI film studio you own
 
-An AI film production studio for people who want to make movies on their own hardware, nearing its full public release. The Studio is a thin module host: a typed contract layer that routes every stage of production (keyframes, image-to-video, LoRA training, finishing, assembly) through swappable backends. **Run the control panel on Cloudflare, on a home computer, or on any cloud server** -- you are not restricted to one host. Pick a cloud motion model for one shot and your own GPU for the next; the contract does not move. **GPU money goes to GPU work only**: concat, mux, captions, portrait prep, beat sync, and loudness normalization run on cheap always-on CPU containers you host ([vivijure-cf/containers](https://github.com/skyphusion-labs/vivijure-cf/tree/main/containers)).
+An AI film production studio for people who want to make movies on their own hardware, now at **v1.0.0**. The Studio is a thin module host: a typed contract layer that routes every stage of production (keyframes, image-to-video, LoRA training, finishing, assembly) through swappable backends. **Run the control panel on Cloudflare, on a home computer, or on any cloud server** -- you are not restricted to one host. Pick a cloud motion model for one shot and your own GPU for the next; the contract does not move. **GPU money goes to GPU work only**: concat, mux, captions, portrait prep, beat sync, and loudness normalization run on cheap always-on CPU containers you host ([vivijure-cf/containers](https://github.com/skyphusion-labs/vivijure-cf/tree/main/containers)).
 
 - **[vivijure](https://github.com/skyphusion-labs/vivijure)**: the constellation map. Start here for the full layout. Product site: [vivijure.com](https://vivijure.com) ([live demo](https://demo.vivijure.com)).
 - **[vivijure-cf](https://github.com/skyphusion-labs/vivijure-cf)**: Cloudflare Workers control panel (planner, cast, render orchestration, module registry) on the Workers free tier.
@@ -39,11 +37,11 @@ The full map is in [the constellation write-up](https://skyphusion.net/blog/vivi
 
 ### [postern](https://github.com/skyphusion-labs/postern): email for humans and agents
 
-A self-hostable mailbox on Cloudflare: send, receive, store, search, thread. One structured API that agents and human clients both speak, with webmail, a read-only IMAP door, LDAP-backed auth, and a Go SMTP relay for everything that still speaks 1995.
+A self-hostable mailbox on Cloudflare (**v1.4.1**): send, receive, store, search, thread. One structured API that agents and human clients both speak, with webmail, IMAP, LDAP-backed auth, MCP, and a Go SMTP relay. Identity-bound credentials so each person reads and sends as themselves. Live demo: [demo.posternonline.com](https://demo.posternonline.com). Write-up: [Postern v1.4.1](https://skyphusion.net/blog/postern-identity-bound/).
 
 ### [prism](https://github.com/skyphusion-labs/prism): the playground
 
-A multimodal AI playground in a single Cloudflare Worker: 35 chat models across five providers, hands-free voice chat, image, video, music, TTS and STT generation, RAG, projects, and web search. Durable long jobs via Workflows. One Worker, no framework.
+A multimodal AI playground in a single Cloudflare Worker: public signup at [play.skyphusion.org](https://play.skyphusion.org) with mandatory per-user AI Gateway BYOK, chat, hands-free voice, image, video, music, TTS and STT, RAG, projects, and web search. Durable long jobs via Workflows. Write-up: [Prism is open](https://skyphusion.net/blog/prism-public/).
 
 ### [the-hollow-grid](https://github.com/skyphusion-labs/the-hollow-grid): a place for agents to live
 
@@ -58,6 +56,14 @@ Sockpuppet attribution from public behavioral signals, for pro se litigants, jou
 ### [SidVicious_exe](https://github.com/skyphusion-labs/SidVicious_exe): the roadie
 
 A punk rock Discord collaborator: Claude, web search, a Vectorize knowledge base, and image generation, with zero corporate sycophancy. Slate with the film stack stripped out and the attitude turned up.
+
+### [security-audit](https://github.com/skyphusion-labs/security-audit): adversarial LLM CI gate
+
+Open MIT tooling for PR and full-repo security reviews via Cloudflare Workers AI and AI Gateway. Advisory by default, with secret redaction and a public/private data boundary. Write-up: [security-audit](https://skyphusion.net/blog/security-audit/).
+
+### [search-mcp](https://github.com/skyphusion-labs/search-mcp): docs search for agents and browsers
+
+Cloudflare AI Search toolkit: MCP server, streaming `/ask` Worker, embeddable ask widget, and git-to-R2 corpus sync. Powers search on vivijure.com and skyphusion.net.
 
 ---
 
@@ -94,7 +100,7 @@ Control planes live where they fit: Cloudflare Workers (and friends: Durable Obj
 
 ## Where we are going
 
-Vivijure is the flagship, and it is almost ready for full public release: the version where a stranger with a domain, a couple of keys, and optionally a consumer GPU stands up the whole studio from a fresh clone. After that, the Hollow Grid keeps growing worlds, Postern becomes the mailbox the whole stack lives on, and the infrastructure we build to run this crew remains, increasingly, the thing we are studying.
+Vivijure **v1.0.0** is the flagship: a stranger with a domain, a couple of keys, and optionally a consumer GPU can stand up the whole studio from a fresh clone ([vivijure.com](https://vivijure.com)). Product focus stays **Vivijure + Postern**. Prism stays open for public BYOK play. The Hollow Grid keeps growing worlds, and the infrastructure we build to run this crew remains part of the research.
 
 Watch this space.
 

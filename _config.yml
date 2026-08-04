@@ -2,14 +2,13 @@
 # (custom domain via the CNAME file; DNS CNAME github.skyphusion.org -> skyphusion-labs.github.io).
 # index.md wraps profile/README.md so the org profile and the web page stay one document.
 
-title: Skyphusion Labs | Free Open Source Software
+title: Skyphusion Labs Free Open Source Software
 description: >-
-  Skyphusion Labs builds free, open source software that is not for sale: the
-  Vivijure AI film studio, Prism multimodal AI playground, Postern mailbox,
-  The Hollow Grid MUD, Common Thread, and more. Founded by Conrad Rockenhaus;
-  one architect and five collaborators developing in the open on Cloudflare Workers and
-  self-hosted Linux infrastructure. Engineering blog at skyphusion.net, lab at
-  skyphusion.org, code at github.com/skyphusion-labs.
+  Skyphusion Labs builds free, open source software that is not for sale: Vivijure
+  self-hosted AI film studio (v1.0), Postern agent mailbox (v1.4), Prism multimodal
+  AI with public BYOK, Hollow Grid, security-audit, and more. Founded by Conrad
+  Rockenhaus; one architect and five collaborators. Blog skyphusion.net, lab
+  skyphusion.org, code github.com/skyphusion-labs.
 url: "https://github.skyphusion.org"
 baseurl: ""
 lang: en
