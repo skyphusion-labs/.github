@@ -47,7 +47,7 @@ The canonical topic set for every **public** `skyphusion-labs` repo lives in `to
 |-------|---------|
 | `owner` / `repo` | GitHub slug (`skyphusion-labs/vivijure`) |
 | `family` | Constellation grouping for batch updates (`vivijure`, `hollow-grid`, `postern`, `sites`, `infra`, `org`, …) |
-| `topics` | Sorted topic list (1–20). Include both **product family** tags (`vivijure`, `mud`, `postern`) and **stack** tags (`cloudflare-workers`, `typescript`, `agpl`). |
+| `topics` | Sorted topic list (1-20). Include both **product family** tags (`vivijure`, `mud`, `postern`) and **stack** tags (`cloudflare-workers`, `typescript`, `agpl`). |
 
 ### Apply or verify
 
