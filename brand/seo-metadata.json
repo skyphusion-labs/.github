@@ -45,7 +45,7 @@
     "owner": "skyphusion-labs",
     "repo": "hollow-grid-py",
     "description": "Python world-server port for The Hollow Grid federated MUD: a Grid node speaking the language-agnostic wire protocol.",
-    "homepage": ""
+    "homepage": "https://hollow.skyphusion.org"
   },
   {
     "owner": "skyphusion-labs",
@@ -56,20 +56,56 @@
   {
     "owner": "skyphusion-labs",
     "repo": "postern",
-    "description": "Self-hostable email for humans and agents on Cloudflare: send, receive, search, MCP, IMAP, and webmail.",
-    "homepage": "https://github.com/skyphusion-labs/postern"
+    "description": "Self-hostable email for humans and agents on Cloudflare: send, receive, search, MCP, IMAP, and webmail. Identity-bound credentials (v1.4).",
+    "homepage": "https://demo.posternonline.com"
   },
   {
     "owner": "skyphusion-labs",
     "repo": "prism",
-    "description": "Multimodal AI playground in one Cloudflare Worker: 35 chat models, voice chat, image/video/music, RAG, and web search.",
+    "description": "Multimodal AI playground on Cloudflare Workers: public signup, per-user AI Gateway BYOK, chat, voice, image/video/music, RAG, web search.",
     "homepage": "https://play.skyphusion.org"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "prism-android",
+    "description": "AGPL Android client for Prism (Kotlin kit skeleton).",
+    "homepage": "https://play.skyphusion.org"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "prism-control-plane",
+    "description": "Multi-tenant control plane for commercial Prism (AGPL-3.0).",
+    "homepage": "https://play.skyphusion.org"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "prism-ios",
+    "description": "AGPL iOS client for Prism (Swift package skeleton).",
+    "homepage": "https://play.skyphusion.org"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "prism-mcp",
+    "description": "Prism MCP: agent door for the Prism multimodal playground API (MIT).",
+    "homepage": "https://play.skyphusion.org"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "rockenhaus-litigation-public",
+    "description": "Pro se litigation document repository for active Michigan state-court matters (PPO and divorce), maintained by Conrad Alan Rockenhaus.",
+    "homepage": "https://rockenhaus.net"
   },
   {
     "owner": "skyphusion-labs",
     "repo": "search-mcp",
     "description": "Cloudflare AI Search toolkit: MCP server, streaming /ask Worker, docs widget, and git-to-R2 corpus sync. AGPL.",
-    "homepage": "https://github.com/skyphusion-labs/search-mcp"
+    "homepage": "https://github.com/skyphusion-labs/search-mcp#readme"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "security-audit",
+    "description": "Adversarial LLM security audits for GitHub PRs and repos via Cloudflare Workers AI + AI Gateway (advisory CI layer, MIT).",
+    "homepage": "https://skyphusion.net/blog/security-audit/"
   },
   {
     "owner": "skyphusion-labs",
@@ -177,6 +213,12 @@
     "owner": "skyphusion-labs",
     "repo": "vivijure-upscale",
     "description": "Real-ESRGAN CUDA video upscale finish module for Vivijure on RunPod. Pairs with vivijure-cf or vivijure-local.",
+    "homepage": "https://vivijure.com"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "vivijure-wan-train",
+    "description": "Wan 2.2 A14B character LoRA training satellite for Vivijure (RunPod serverless).",
     "homepage": "https://vivijure.com"
   }
 ]

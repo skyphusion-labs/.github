@@ -216,18 +216,18 @@
     "repo": "prism",
     "family": "prism",
     "topics": [
-      "anthropic",
-      "cloudflare-access",
+      "ai-gateway",
+      "byok",
       "cloudflare-d1",
       "cloudflare-r2",
       "cloudflare-vectorize",
       "cloudflare-workers",
       "cloudflare-workflows",
-      "deepgram",
       "durable-objects",
       "llm",
       "multimodal",
       "openai",
+      "public-signup",
       "rag",
       "speech-to-text",
       "text-to-image",
@@ -236,6 +236,87 @@
       "typescript",
       "voice-chat",
       "workers-ai"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "prism-android",
+    "family": "prism",
+    "topics": [
+      "agpl",
+      "android",
+      "kotlin",
+      "mobile",
+      "multimodal",
+      "open-source",
+      "prism",
+      "skyphusion"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "prism-control-plane",
+    "family": "prism",
+    "topics": [
+      "agpl",
+      "cloudflare-workers",
+      "control-plane",
+      "multi-tenant",
+      "open-source",
+      "prism",
+      "provisioning",
+      "saas",
+      "serverless",
+      "tenancy",
+      "typescript"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "prism-ios",
+    "family": "prism",
+    "topics": [
+      "agpl",
+      "ios",
+      "mobile",
+      "multimodal",
+      "open-source",
+      "prism",
+      "skyphusion",
+      "swift",
+      "swift-package"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "prism-mcp",
+    "family": "prism",
+    "topics": [
+      "agents",
+      "ai-agents",
+      "cloudflare-workers",
+      "mcp",
+      "mit-license",
+      "model-context-protocol",
+      "multimodal",
+      "prism",
+      "typescript"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "rockenhaus-litigation-public",
+    "family": "litigation",
+    "topics": [
+      "cc0",
+      "court-records",
+      "legal",
+      "litigation",
+      "michigan",
+      "open-data",
+      "pro-se",
+      "public-records",
+      "rockenhaus"
     ]
   },
   {
@@ -261,6 +342,27 @@
       "semantic-search",
       "serverless",
       "typescript",
+      "workers-ai"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "security-audit",
+    "family": "infra",
+    "topics": [
+      "ai-gateway",
+      "ci",
+      "cloudflare-ai",
+      "cloudflare-workers",
+      "code-security",
+      "devsecops",
+      "github-actions",
+      "llm",
+      "llm-security",
+      "mit-license",
+      "pull-request",
+      "security",
+      "security-audit",
       "workers-ai"
     ]
   },
@@ -678,6 +780,24 @@
       "video-upscaling",
       "vivijure",
       "vivijure-module"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "vivijure-wan-train",
+    "family": "vivijure",
+    "topics": [
+      "agpl",
+      "ai-film",
+      "character-lora",
+      "gpu",
+      "lora",
+      "python",
+      "runpod",
+      "serverless",
+      "vivijure",
+      "vivijure-module",
+      "wan"
     ]
   }
 ]
