@@ -272,6 +272,16 @@
   },
   {
     "owner": "skyphusion-labs",
+    "repo": "vivijure-blender",
+    "display": "vivijure-blender",
+    "tagline": "Headless Blender compositor grade for Vivijure finish.",
+    "accent": "#fb923c",
+    "accent2": "#a78bfa",
+    "chip": "FINISH",
+    "motif": "gpu"
+  },
+  {
+    "owner": "skyphusion-labs",
     "repo": "vivijure-cf",
     "display": "vivijure-cf",
     "tagline": "Cloudflare Workers control panel for Vivijure Studio.",
