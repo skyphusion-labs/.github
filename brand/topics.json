@@ -543,6 +543,28 @@
   },
   {
     "owner": "skyphusion-labs",
+    "repo": "vivijure-blender",
+    "family": "vivijure",
+    "topics": [
+      "agpl",
+      "ai-video",
+      "blender",
+      "compositor",
+      "cuda",
+      "docker",
+      "finish-engine",
+      "gpu",
+      "python",
+      "runpod",
+      "self-hosted",
+      "serverless",
+      "video-generation",
+      "vivijure",
+      "vivijure-module"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
     "repo": "vivijure-cf",
     "family": "vivijure",
     "topics": [
