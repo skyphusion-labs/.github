@@ -61,6 +61,21 @@
   },
   {
     "owner": "skyphusion-labs",
+    "repo": "common-thread-mcp",
+    "family": "common-thread",
+    "topics": [
+      "agents",
+      "common-thread",
+      "mcp",
+      "mit-license",
+      "model-context-protocol",
+      "osint",
+      "sockpuppet",
+      "typescript"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
     "repo": "crew-bus",
     "family": "infra",
     "topics": [
@@ -495,6 +510,20 @@
   },
   {
     "owner": "skyphusion-labs",
+    "repo": "vivijure-android",
+    "family": "vivijure",
+    "topics": [
+      "agpl",
+      "android",
+      "film",
+      "kotlin",
+      "mobile",
+      "vivijure",
+      "vivijure-studio"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
     "repo": "vivijure-audio-upscale",
     "family": "vivijure",
     "topics": [
@@ -655,6 +684,20 @@
       "typescript",
       "video-generation",
       "vivijure"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "vivijure-ios",
+    "family": "vivijure",
+    "topics": [
+      "agpl",
+      "film",
+      "ios",
+      "mobile",
+      "swift",
+      "vivijure",
+      "vivijure-studio"
     ]
   },
   {

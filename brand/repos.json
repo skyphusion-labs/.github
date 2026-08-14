@@ -42,6 +42,16 @@
   },
   {
     "owner": "skyphusion-labs",
+    "repo": "common-thread-mcp",
+    "display": "common-thread-mcp",
+    "tagline": "Agent door for Common Thread investigations.",
+    "accent": "#fbbf24",
+    "accent2": "#38bdf8",
+    "chip": "MCP",
+    "motif": "thread"
+  },
+  {
+    "owner": "skyphusion-labs",
     "repo": "crew-bus",
     "display": "crew-bus",
     "tagline": "Cross-crew MCP message bus for agent runtimes.",
@@ -252,6 +262,16 @@
   },
   {
     "owner": "skyphusion-labs",
+    "repo": "vivijure-android",
+    "display": "vivijure-android",
+    "tagline": "Android client for the Vivijure film studio.",
+    "accent": "#22d3ee",
+    "accent2": "#34d399",
+    "chip": "ANDROID",
+    "motif": "film"
+  },
+  {
+    "owner": "skyphusion-labs",
     "repo": "vivijure-audio-upscale",
     "display": "vivijure-audio-upscale",
     "tagline": "CUDA speech enhancement for dialogue finish paths.",
@@ -319,6 +339,16 @@
     "accent2": "#22d3ee",
     "chip": "CORE",
     "motif": "core"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "vivijure-ios",
+    "display": "vivijure-ios",
+    "tagline": "iOS client for the Vivijure film studio.",
+    "accent": "#22d3ee",
+    "accent2": "#a78bfa",
+    "chip": "IOS",
+    "motif": "film"
   },
   {
     "owner": "skyphusion-labs",
