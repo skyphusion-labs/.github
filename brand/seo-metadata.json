@@ -19,6 +19,12 @@
   },
   {
     "owner": "skyphusion-labs",
+    "repo": "common-thread-mcp",
+    "description": "MCP server for Common Thread -- drive investigations, ingest, attribution, and evidence packets from an agent (MIT)",
+    "homepage": "https://www.npmjs.com/package/@skyphusion/common-thread-mcp"
+  },
+  {
+    "owner": "skyphusion-labs",
     "repo": "crew-bus",
     "description": "Cross-crew MCP message bus for coordinating multiple agent runtimes (Cursor and Claude Code). AGPL.",
     "homepage": "https://github.com/skyphusion-labs/crew-bus"
@@ -145,6 +151,12 @@
   },
   {
     "owner": "skyphusion-labs",
+    "repo": "vivijure-android",
+    "description": "AGPL native client for Vivijure Studio (film panel API)",
+    "homepage": "https://vivijure.com"
+  },
+  {
+    "owner": "skyphusion-labs",
     "repo": "vivijure-audio-upscale",
     "description": "GPU speech enhancement finish engine for Vivijure (resemble-enhance on RunPod). Pairs with vivijure-cf or vivijure-local.",
     "homepage": "https://vivijure.com"
@@ -153,6 +165,12 @@
     "owner": "skyphusion-labs",
     "repo": "vivijure-backend",
     "description": "RunPod GPU render engine for Vivijure: SDXL keyframes, Wan image-to-video, LoRA training, ffmpeg assembly. Pairs with vivijure-cf or vivijure-local.",
+    "homepage": "https://vivijure.com"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "vivijure-blender",
+    "description": "Headless Blender compositor finish engine for Vivijure on RunPod. Grade presets for the finish-blender module; pairs with vivijure-cf or vivijure-local.",
     "homepage": "https://vivijure.com"
   },
   {
@@ -177,6 +195,12 @@
     "owner": "skyphusion-labs",
     "repo": "vivijure-core",
     "description": "Vivijure Core: shared orchestration unifying vivijure-cf and vivijure-local (module registry, film pipeline, Platform ICD).",
+    "homepage": "https://vivijure.com"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "vivijure-ios",
+    "description": "AGPL native client for Vivijure Studio (film panel API)",
     "homepage": "https://vivijure.com"
   },
   {

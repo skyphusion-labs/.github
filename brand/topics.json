@@ -61,6 +61,17 @@
   },
   {
     "owner": "skyphusion-labs",
+    "repo": "common-thread-mcp",
+    "family": "common-thread",
+    "topics": [
+      "common-thread",
+      "mcp",
+      "mit",
+      "model-context-protocol"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
     "repo": "crew-bus",
     "family": "infra",
     "topics": [
@@ -495,6 +506,18 @@
   },
   {
     "owner": "skyphusion-labs",
+    "repo": "vivijure-android",
+    "family": "vivijure",
+    "topics": [
+      "agpl",
+      "android",
+      "film",
+      "kotlin",
+      "vivijure"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
     "repo": "vivijure-audio-upscale",
     "family": "vivijure",
     "topics": [
@@ -539,6 +562,28 @@
       "video-generation",
       "vivijure",
       "wan"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "vivijure-blender",
+    "family": "vivijure",
+    "topics": [
+      "agpl",
+      "ai-video",
+      "blender",
+      "compositor",
+      "cuda",
+      "docker",
+      "finish-engine",
+      "gpu",
+      "python",
+      "runpod",
+      "self-hosted",
+      "serverless",
+      "video-generation",
+      "vivijure",
+      "vivijure-module"
     ]
   },
   {
@@ -632,6 +677,18 @@
       "self-hosted",
       "typescript",
       "video-generation",
+      "vivijure"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "vivijure-ios",
+    "family": "vivijure",
+    "topics": [
+      "agpl",
+      "film",
+      "ios",
+      "swift",
       "vivijure"
     ]
   },
