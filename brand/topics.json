@@ -64,14 +64,10 @@
     "repo": "common-thread-mcp",
     "family": "common-thread",
     "topics": [
-      "agents",
       "common-thread",
       "mcp",
-      "mit-license",
-      "model-context-protocol",
-      "osint",
-      "sockpuppet",
-      "typescript"
+      "mit",
+      "model-context-protocol"
     ]
   },
   {
@@ -517,9 +513,7 @@
       "android",
       "film",
       "kotlin",
-      "mobile",
-      "vivijure",
-      "vivijure-studio"
+      "vivijure"
     ]
   },
   {
@@ -694,10 +688,8 @@
       "agpl",
       "film",
       "ios",
-      "mobile",
       "swift",
-      "vivijure",
-      "vivijure-studio"
+      "vivijure"
     ]
   },
   {
