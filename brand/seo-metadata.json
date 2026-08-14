@@ -20,7 +20,7 @@
   {
     "owner": "skyphusion-labs",
     "repo": "common-thread-mcp",
-    "description": "MCP server for Common Thread: drive investigations, ingest, attribution, and evidence packets from an agent (MIT).",
+    "description": "MCP server for Common Thread -- drive investigations, ingest, attribution, and evidence packets from an agent (MIT)",
     "homepage": "https://www.npmjs.com/package/@skyphusion/common-thread-mcp"
   },
   {
@@ -152,7 +152,7 @@
   {
     "owner": "skyphusion-labs",
     "repo": "vivijure-android",
-    "description": "AGPL native Android client for Vivijure Studio (film panel API).",
+    "description": "AGPL native client for Vivijure Studio (film panel API)",
     "homepage": "https://vivijure.com"
   },
   {
@@ -200,7 +200,7 @@
   {
     "owner": "skyphusion-labs",
     "repo": "vivijure-ios",
-    "description": "AGPL native iOS client for Vivijure Studio (film panel API).",
+    "description": "AGPL native client for Vivijure Studio (film panel API)",
     "homepage": "https://vivijure.com"
   },
   {
