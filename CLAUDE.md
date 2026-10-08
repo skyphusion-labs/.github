@@ -23,6 +23,16 @@ Guidance for Claude Code (and the crew) working in this repo.
 `brand/` npm deps); it is not inherited by other repos. It documents the org-wide Dependabot
 shape (see its header comment) but each repo carries its own copy.
 
+## Branch protection: excluded from the org ruleset (no `ci` check)
+
+This repo cannot emit a check named `ci`. No workflow here defines a job with that name. It emits `coverage` and `CodeQL`.
+The org ruleset `aviation-grade-main-org` (18677665) requires `ci`, `coverage` and `CodeQL`.
+So this repo sits on that ruleset's exclusion list. Without it, every PR would wait forever for a check nothing produces.
+Main is still protected. The org ruleset `aviation-grade-org` (24049804) applies to every repo. It blocks force pushes and requires a pull request.
+Two repo-level rulesets add one approval, plus required checks `CodeQL` and `coverage`, with the branch up to date.
+To re-measure, run `gh api repos/skyphusion-labs/.github/rules/branches/main -q '.[]|[.ruleset_id,.type]|@tsv'`. It lists what gates main. Ruleset 18677665 is absent from the output.
+Tracked in .github#50. Measured 2026-10-08.
+
 ## Documentation map
 
 - `docs/claude-md-standard.md` -- the authoring standard every other repo's `CLAUDE.md` is
