@@ -39,6 +39,14 @@ for cmd in gh jq; do
   fi
 done
 
+# GitHub rejects a description longer than 350 characters.
+long_count="$(jq '[.[] | select((.description | length) > 350 or (.description | length) == 0)] | length' "$CATALOG")"
+if [[ "$long_count" != "0" ]]; then
+  echo "Catalog validation failed: every description must be 1..350 characters." >&2
+  jq -r '.[] | select((.description | length) > 350 or (.description | length) == 0) | "\(.owner)/\(.repo): \(.description | length) chars"' "$CATALOG" >&2
+  exit 1
+fi
+
 entries="$(jq -c --arg repo "$FILTER_REPO" '
   [.[] | if ($repo != "" and .repo != $repo) then empty else . end]
 ' "$CATALOG")"

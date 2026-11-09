@@ -64,10 +64,16 @@
     "repo": "common-thread-mcp",
     "family": "common-thread",
     "topics": [
+      "agents",
+      "ai-agents",
       "common-thread",
       "mcp",
       "mit",
-      "model-context-protocol"
+      "model-context-protocol",
+      "npm-package",
+      "open-source",
+      "osint",
+      "typescript"
     ]
   },
   {
@@ -510,9 +516,15 @@
     "family": "vivijure",
     "topics": [
       "agpl",
+      "ai-video",
       "android",
-      "film",
+      "compose",
+      "filmmaking",
       "kotlin",
+      "mobile",
+      "open-source",
+      "self-hosted",
+      "storyboard",
       "vivijure"
     ]
   },
@@ -686,9 +698,15 @@
     "family": "vivijure",
     "topics": [
       "agpl",
-      "film",
+      "ai-video",
+      "filmmaking",
       "ios",
+      "mobile",
+      "open-source",
+      "self-hosted",
+      "storyboard",
       "swift",
+      "swiftui",
       "vivijure"
     ]
   },
@@ -855,6 +873,91 @@
       "vivijure",
       "vivijure-module",
       "wan"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "poly-styrene",
+    "family": "discord-bots",
+    "topics": [
+      "agpl",
+      "ai-gateway",
+      "cloudflare-workers",
+      "cybersecurity",
+      "discord",
+      "discord-bot",
+      "llm",
+      "ollama",
+      "open-source",
+      "runpod",
+      "self-hosted",
+      "typescript",
+      "workers-ai"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "skyphusion-ai",
+    "family": "wordpress",
+    "topics": [
+      "ai-gateway",
+      "ai-search",
+      "cloudflare",
+      "embeddings",
+      "gpl",
+      "open-source",
+      "php",
+      "vectorize",
+      "woocommerce",
+      "wordpress",
+      "wordpress-plugin",
+      "workers-ai"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "zaraz-consent",
+    "family": "wordpress",
+    "topics": [
+      "cloudflare",
+      "consent",
+      "cookies",
+      "gdpr",
+      "gpl",
+      "must-use",
+      "open-source",
+      "php",
+      "privacy",
+      "wordpress",
+      "wordpress-plugin",
+      "zaraz"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "wordpress-on-cloudflare",
+    "family": "wordpress",
+    "topics": [
+      "cloudflare",
+      "cloudflare-d1",
+      "cloudflare-r2",
+      "cloudflare-workers",
+      "docker",
+      "durable-objects",
+      "gpl",
+      "hyperdrive",
+      "litestream",
+      "mysql",
+      "php",
+      "php-wasm",
+      "planetscale",
+      "serverless",
+      "sqlite",
+      "terraform",
+      "webassembly",
+      "woocommerce",
+      "wordpress",
+      "workers-for-platforms"
     ]
   }
 ]

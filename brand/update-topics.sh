@@ -50,14 +50,23 @@ if [[ ! -f "$CATALOG" ]]; then
 fi
 
 # Validate catalog shape before any API calls.
+# GitHub topics are lowercase letters, digits, and hyphens, at most 50 characters.
 invalid_count="$(jq -r --argjson max "$MAX_TOPICS" '
-  [.[] | select((.topics | length) > $max or (.topics | length) == 0)]
+  [.[] | select(
+    (.topics | length) > $max
+    or (.topics | length) == 0
+    or any(.topics[]; test("^[a-z0-9]([a-z0-9-]{0,49})?$") | not)
+  )]
   | length
 ' "$CATALOG")"
 if [[ "$invalid_count" != "0" ]]; then
-  echo "Catalog validation failed: every entry needs 1..${MAX_TOPICS} topics." >&2
+  echo "Catalog validation failed: every entry needs 1..${MAX_TOPICS} topics, each matching [a-z0-9-]." >&2
   jq -r --argjson max "$MAX_TOPICS" '
-    .[] | select((.topics | length) > $max or (.topics | length) == 0)
+    .[] | select(
+      (.topics | length) > $max
+      or (.topics | length) == 0
+      or any(.topics[]; test("^[a-z0-9]([a-z0-9-]{0,49})?$") | not)
+    )
     | "\(.owner)/\(.repo): \(.topics | length) topics"
   ' "$CATALOG" >&2
   exit 1
