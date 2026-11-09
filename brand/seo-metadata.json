@@ -152,7 +152,7 @@
   {
     "owner": "skyphusion-labs",
     "repo": "vivijure-android",
-    "description": "AGPL native client for Vivijure Studio (film panel API)",
+    "description": "AGPL Android client for Vivijure Studio. Kotlin kit and Compose planner against the same film panel API as vivijure-cf and vivijure-local.",
     "homepage": "https://vivijure.com"
   },
   {
@@ -200,7 +200,7 @@
   {
     "owner": "skyphusion-labs",
     "repo": "vivijure-ios",
-    "description": "AGPL native client for Vivijure Studio (film panel API)",
+    "description": "AGPL iOS client for Vivijure Studio. Swift kit and stepped planner against the same film panel API as vivijure-cf and vivijure-local.",
     "homepage": "https://vivijure.com"
   },
   {
@@ -244,5 +244,28 @@
     "repo": "vivijure-wan-train",
     "description": "Wan 2.2 A14B character LoRA training satellite for Vivijure (RunPod serverless).",
     "homepage": "https://vivijure.com"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "poly-styrene",
+    "description": "Discord bot for technical help in a cybersecurity channel. Workers AI through an AI Gateway, one Ollama model on RunPod, and a role-gated lab with no network. AGPL-3.0."
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "skyphusion-ai",
+    "description": "Skyphusion AI for Cloudflare. Workers AI, AI Gateway, and AI Search for WordPress and WooCommerce, from Settings or WP-CLI. GPL-2.0-or-later.",
+    "homepage": "https://skyphusion.org"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "zaraz-consent",
+    "description": "WordPress must-use drop-in that reopens the Cloudflare Zaraz consent modal and reads the consent cookie. It does not gate scripts. No banner library. GPL-2.0-or-later.",
+    "homepage": "https://skyphusion.org"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "wordpress-on-cloudflare",
+    "description": "Framework for many WordPress and WooCommerce sites on your own Cloudflare Workers for Platforms account, provisioned by one command or by a Worker, plus the research behind it.",
+    "homepage": "https://skyphusion.org"
   }
 ]

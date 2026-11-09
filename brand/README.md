@@ -68,7 +68,7 @@ The script uses `PUT /repos/{owner}/{repo}/topics` (full replace). Always edit `
 
 ### When to update
 
-- **New public repo:** add a row to `topics.json` (and `repos.json` if it gets a social preview) before or right after the public flip.
+- **New public repo:** add a row to `topics.json`, `seo-metadata.json`, and `repos.json` before or right after the public flip. `check-catalog-coverage.sh` fails the drift workflow when any of the three is missing.
 - **New capability shipped:** add stack or feature topics if there is room under the 20-topic cap.
 - **Constellation rename:** update the family tag across sibling repos in one `--family` pass.
 

@@ -1,6 +1,7 @@
 name: OSS discoverability drift
 
-# Fail when live GitHub repo topics or About metadata diverge from brand/*.json.
+# Fail when live GitHub repo topics or About metadata diverge from brand/*.json,
+# or when a public repo is missing from topics.json, seo-metadata.json, or repos.json.
 # Catches manual GitHub UI edits and catalog PRs that forgot to run the apply scripts.
 
 on:
@@ -8,6 +9,7 @@ on:
     paths:
       - 'brand/topics.json'
       - 'brand/seo-metadata.json'
+      - 'brand/repos.json'
       - 'brand/update-topics.sh'
       - 'brand/apply-seo-metadata.sh'
       - 'brand/check-catalog-coverage.sh'
@@ -17,6 +19,7 @@ on:
     paths:
       - 'brand/topics.json'
       - 'brand/seo-metadata.json'
+      - 'brand/repos.json'
       - 'brand/update-topics.sh'
       - 'brand/apply-seo-metadata.sh'
       - 'brand/check-catalog-coverage.sh'

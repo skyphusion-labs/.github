@@ -419,5 +419,45 @@
     "accent2": "#eab308",
     "chip": "TRAIN",
     "motif": "gpu"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "poly-styrene",
+    "display": "Poly Styrene",
+    "tagline": "Technical help in a cybersecurity channel.",
+    "accent": "#ef4444",
+    "accent2": "#f97316",
+    "chip": "DISCORD",
+    "motif": "discord"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "skyphusion-ai",
+    "display": "Skyphusion AI",
+    "tagline": "Workers AI, AI Gateway, and AI Search for WordPress.",
+    "accent": "#38bdf8",
+    "accent2": "#1d4ed8",
+    "chip": "WP",
+    "motif": "blog"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "zaraz-consent",
+    "display": "Zaraz Consent",
+    "tagline": "Reopen the Zaraz consent modal from WordPress.",
+    "accent": "#22c55e",
+    "accent2": "#0f766e",
+    "chip": "CONSENT",
+    "motif": "blog"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "wordpress-on-cloudflare",
+    "display": "WordPress on Cloudflare",
+    "tagline": "Many WordPress sites on Workers for Platforms.",
+    "accent": "#0ea5e9",
+    "accent2": "#0369a1",
+    "chip": "WFP",
+    "motif": "blog"
   }
 ]
