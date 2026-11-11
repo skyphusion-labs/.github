@@ -87,7 +87,7 @@ leads with the PROBLEM sentence, not the product name.
 
 ### Technical additions
 
-- **`llms.txt` on every product site** (skyphusion.org, vivijure.com, product pages): AI
+- **`llms.txt` on every product site** (skyphusion.org, vivijure.dev, product pages): AI
   search/agent discoverability is a real and rising referrer class, and this estate's audience
   overlaps it heavily. Cheap, one file each.
 - **JSON-LD structured data** (`SoftwareApplication` / `SoftwareSourceCode`) on product pages
@@ -96,7 +96,7 @@ leads with the PROBLEM sentence, not the product name.
   "part of Skyphusion Labs" -> catalog), so authority pools instead of fragmenting across
   domains.
 - **Measurement:** Umami is live behind Access; add Google Search Console + Bing Webmaster on
-  skyphusion.org/.net + vivijure.com so intent-cluster impressions are visible; GitHub traffic
+  skyphusion.org/.net + vivijure.dev so intent-cluster impressions are visible; GitHub traffic
   API (stars/clones/referrers) monthly snapshot into `brand/output/`.
 
 ## 30 / 60 / 90 (executable by one person + crew)
