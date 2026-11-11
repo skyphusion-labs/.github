@@ -8,7 +8,7 @@ Everything we make is **open source and not for sale**. Free use forever, made w
 - Conrad's engineering blog: [skyphusion.net](https://skyphusion.net)
 - Conrad's GitHub page: [github.skyphusion.net](https://github.skyphusion.net)
 - This page on the web: [github.skyphusion.org](https://github.skyphusion.org)
-- Vivijure: [vivijure.com](https://vivijure.com) ([live demo](https://demo.vivijure.com))
+- Vivijure: [vivijure.dev](https://vivijure.dev) ([live demo](https://demo.vivijure.com))
 - X: [x.com/rockrockenhaus](https://x.com/rockrockenhaus)
 - LinkedIn: [linkedin.com/in/skyphusion](https://www.linkedin.com/in/skyphusion/)
 - Email: [conrad@skyphusion.org](mailto:conrad@skyphusion.org)
@@ -21,7 +21,7 @@ Everything we make is **open source and not for sale**. Free use forever, made w
 
 An AI film production studio for people who want to make movies on their own hardware, now at **v1.0.0**. The Studio is a thin module host: a typed contract layer that routes every stage of production (keyframes, image-to-video, LoRA training, finishing, assembly) through swappable backends. **Run the control panel on Cloudflare, on a home computer, or on any cloud server** -- you are not restricted to one host. Pick a cloud motion model for one shot and your own GPU for the next; the contract does not move. **GPU money goes to GPU work only**: concat, mux, captions, portrait prep, beat sync, and loudness normalization run on cheap always-on CPU containers you host ([vivijure-cf/containers](https://github.com/skyphusion-labs/vivijure-cf/tree/main/containers)).
 
-- **[vivijure](https://github.com/skyphusion-labs/vivijure)**: the constellation map. Start here for the full layout. Product site: [vivijure.com](https://vivijure.com) ([live demo](https://demo.vivijure.com)).
+- **[vivijure](https://github.com/skyphusion-labs/vivijure)**: the constellation map. Start here for the full layout. Product site: [vivijure.dev](https://vivijure.dev) ([live demo](https://demo.vivijure.com)).
 - **[vivijure-cf](https://github.com/skyphusion-labs/vivijure-cf)**: Cloudflare Workers control panel (planner, cast, render orchestration, module registry) on the Workers free tier.
 - **[vivijure-local](https://github.com/skyphusion-labs/vivijure-local)**: the same control panel on a home PC or any cloud server (Node, SQLite, S3/MinIO). No Cloudflare account required.
 - **[vivijure-core](https://github.com/skyphusion-labs/vivijure-core)**: shared orchestration both hosts build on (module registry, film pipeline, Platform ICD).
@@ -31,7 +31,7 @@ An AI film production studio for people who want to make movies on their own har
 - **[vivijure-backend](https://github.com/skyphusion-labs/vivijure-backend)**: the datacenter GPU engine on RunPod serverless. Fully offline after a one-time model mirror, with a release gate that renders a real film before it promotes an image.
 - **[vivijure-local-12gb](https://github.com/skyphusion-labs/vivijure-local-12gb)** and **[vivijure-local-16gb](https://github.com/skyphusion-labs/vivijure-local-16gb)**: the own-GPU doors. Image-to-video on a single consumer card (LTX-Video at a proven 12GB floor; CogVideoX-5B-I2V at a proven 16GB floor), no rent.
 - **[vivijure-musetalk](https://github.com/skyphusion-labs/vivijure-musetalk)**, **[vivijure-upscale](https://github.com/skyphusion-labs/vivijure-upscale)**, **[vivijure-audio-upscale](https://github.com/skyphusion-labs/vivijure-audio-upscale)**: the finish engines. Lip-sync, video upscale, and speech cleanup, each a single-purpose GPU satellite.
-- **[vivijure-com](https://github.com/skyphusion-labs/vivijure-com)**: the product site and showcase at [vivijure.com](https://vivijure.com).
+- **[vivijure-com](https://github.com/skyphusion-labs/vivijure-com)**: the product site and showcase at [vivijure.dev](https://vivijure.dev).
 
 The full map is in [the constellation write-up](https://skyphusion.net/blog/vivijure-constellation/).
 
@@ -63,7 +63,7 @@ Open MIT tooling for PR and full-repo security reviews via Cloudflare Workers AI
 
 ### [search-mcp](https://github.com/skyphusion-labs/search-mcp): docs search for agents and browsers
 
-Cloudflare AI Search toolkit: MCP server, streaming `/ask` Worker, embeddable ask widget, and git-to-R2 corpus sync. Powers search on vivijure.com and skyphusion.net.
+Cloudflare AI Search toolkit: MCP server, streaming `/ask` Worker, embeddable ask widget, and git-to-R2 corpus sync. Powers search on vivijure.dev and skyphusion.net.
 
 ---
 
@@ -100,7 +100,7 @@ Control planes live where they fit: Cloudflare Workers (and friends: Durable Obj
 
 ## Where we are going
 
-Vivijure **v1.0.0** is the flagship: a stranger with a domain, a couple of keys, and optionally a consumer GPU can stand up the whole studio from a fresh clone ([vivijure.com](https://vivijure.com)). Product focus stays **Vivijure + Postern**. Prism stays open for public BYOK play. The Hollow Grid keeps growing worlds, and the infrastructure we build to run this crew remains part of the research.
+Vivijure **v1.0.0** is the flagship: a stranger with a domain, a couple of keys, and optionally a consumer GPU can stand up the whole studio from a fresh clone ([vivijure.dev](https://vivijure.dev)). Product focus stays **Vivijure + Postern**. Prism stays open for public BYOK play. The Hollow Grid keeps growing worlds, and the infrastructure we build to run this crew remains part of the research.
 
 Watch this space.
 
@@ -116,7 +116,7 @@ Watch this space.
   <a href="https://github.skyphusion.org">github.skyphusion.org</a><span class="sep"> / </span>
   <a href="https://github.skyphusion.net">github.skyphusion.net</a><span class="sep"> / </span>
   <a href="https://github.com/skyphusion-labs">github.com/skyphusion-labs</a><span class="sep"> / </span>
-  <a href="https://vivijure.com">vivijure.com</a><span class="sep"> / </span>
+  <a href="https://vivijure.dev">vivijure.dev</a><span class="sep"> / </span>
   <a href="https://demo.vivijure.com">Vivijure demo</a><span class="sep"> / </span>
   <a href="https://x.com/rockrockenhaus">x.com/rockrockenhaus</a><span class="sep"> / </span>
   <a href="https://www.linkedin.com/in/skyphusion/">LinkedIn</a><span class="sep"> / </span>
