@@ -459,5 +459,35 @@
     "accent2": "#0369a1",
     "chip": "WFP",
     "motif": "blog"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "mt4-runtime",
+    "display": "mt4-runtime",
+    "tagline": "Linux runtime image: Wine, cloudflared, and an operator-installed MT4 terminal.",
+    "accent": "#60a5fa",
+    "accent2": "#06b6d4",
+    "chip": "RUNTIME",
+    "motif": "core"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "postern-demo",
+    "display": "postern demo",
+    "tagline": "The public postern demo, pinned to a release.",
+    "accent": "#22d3ee",
+    "accent2": "#34d399",
+    "chip": "DEMO",
+    "motif": "email"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "postern-site",
+    "display": "posternonline.com",
+    "tagline": "The site for postern, email for humans and agents.",
+    "accent": "#22d3ee",
+    "accent2": "#34d399",
+    "chip": "SITE",
+    "motif": "email"
   }
 ]
