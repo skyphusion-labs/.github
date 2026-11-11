@@ -1,0 +1,1 @@
+Org .github repo: community-health files, the org profile and the Jekyll/Pages site content. No package.json, go.mod or test suite; its own workflows lint and build the pages.
