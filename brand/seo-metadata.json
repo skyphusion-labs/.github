@@ -267,5 +267,23 @@
     "repo": "wordpress-on-cloudflare",
     "description": "Framework for many WordPress and WooCommerce sites on your own Cloudflare Workers for Platforms account, provisioned by one command or by a Worker, plus the research behind it.",
     "homepage": "https://skyphusion.org"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "mt4-runtime",
+    "description": "Linux runtime image for Wine, an operator-installed MetaTrader 4 terminal, and cloudflared.",
+    "homepage": ""
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "postern-demo",
+    "description": "Deploys the public postern demo (demo.posternonline.com) from a pinned release via Workers Builds",
+    "homepage": "https://demo.posternonline.com"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "postern-site",
+    "description": "Marketing site for Postern, self-hosted email for humans and agents (posternonline.com)",
+    "homepage": "https://posternonline.com"
   }
 ]
