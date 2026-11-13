@@ -1,0 +1,57 @@
+name: approval-at-head-reusable
+
+# fleet-chezmoi#2386. ORG-WIDE REUSABLE: the approval-at-head gate. Callers pin it
+# by FULL sha, from a workflow named approval-at-head.yml on pull_request
+# [opened, reopened, synchronize] ONLY:
+#
+#   jobs:
+#     approval-at-head:
+#       uses: skyphusion-labs/.github/.github/workflows/approval-at-head-reusable.yml@<sha>
+#       with:
+#         pr_number: ${{ github.event.pull_request.number }}
+#         head_sha: ${{ github.event.pull_request.head.sha }}
+#
+# The required context is then exactly `approval-at-head / gate` (caller job id /
+# this job name). A review re-runs that run through
+# approval-at-head-retrigger-reusable.yml; it must never judge in a second suite,
+# because a red run in one suite blocks the merge whatever another suite says
+# (measured, fleet-chezmoi#2626).
+#
+# THE JUDGE is the composite action .github/actions/approval-at-head, pinned below
+# at a LITERAL sha on main. The runner downloads it at that sha; there is no
+# checkout, so no PR can edit the script that judges it. Re-pinning the action is
+# a reviewed change to the judge, and callers then re-pin this file.
+on:
+  workflow_call:
+    inputs:
+      pr_number:
+        description: "the pull request number"
+        required: true
+        type: number
+      head_sha:
+        description: "the FULL 40-char head sha the event was raised for"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+  pull-requests: read
+  actions: read
+
+jobs:
+  gate:
+    name: gate
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      pull-requests: read
+      actions: read
+    steps:
+      # Exit 0 PASS, 1 FINDING, 2 COULD NOT MEASURE. Both 1 and 2 are red.
+      - name: an approval exists after the remote first saw the head
+        uses: skyphusion-labs/.github/.github/actions/approval-at-head@e4223a9c244ee772957f792fe513faf8d623e4d2 # .github#60
+        with:
+          mode: judge
+          pr-number: ${{ inputs.pr_number }}
+          head-sha: ${{ inputs.head_sha }}
