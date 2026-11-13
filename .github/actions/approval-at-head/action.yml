@@ -1,0 +1,59 @@
+name: approval-at-head
+description: >-
+  Org-wide approval-at-head gate (fleet-chezmoi#2386). judge: pass only when a
+  trusted reviewer's latest decision is APPROVED, at the head commit_id, submitted
+  strictly after the remote first saw the head. retrigger: on a review, wait for
+  the caller's pull_request gate run to finish and re-run it in its own suite.
+
+# The runner downloads this action at the LITERAL sha the reusable workflow pins,
+# so the script that runs is that sha's copy, never the calling PR's tree, and no
+# checkout step is involved. Callers do not use this action directly; they call
+# the reusable workflows in this repo, which pin it.
+#
+# Every input reaches the script through env, never through ${{ }} inside run:,
+# so an input value cannot become shell code.
+inputs:
+  mode:
+    description: "judge or retrigger"
+    required: true
+  head-sha:
+    description: "the FULL 40-char head sha"
+    required: true
+  pr-number:
+    description: "the pull request number (judge only)"
+    required: false
+    default: ""
+  gate-workflow:
+    description: "the caller repo's gate workflow file name (retrigger only)"
+    required: false
+    default: approval-at-head.yml
+  token:
+    description: "token with pull-requests:read and actions:read (judge) or actions:write (retrigger)"
+    required: false
+    default: ${{ github.token }}
+
+runs:
+  using: composite
+  steps:
+    # Exit 0 PASS or re-run requested, 1 FINDING, 2 COULD NOT MEASURE. 1 and 2 are red.
+    - name: approval-at-head
+      shell: bash
+      env:
+        GH_TOKEN: ${{ inputs.token }}
+        AAH_MODE: ${{ inputs.mode }}
+        AAH_REPO: ${{ github.repository }}
+        AAH_PR: ${{ inputs.pr-number }}
+        AAH_HEAD_SHA: ${{ inputs.head-sha }}
+        AAH_WORKFLOW: ${{ inputs.gate-workflow }}
+      run: |
+        set -euo pipefail
+        script="$GITHUB_ACTION_PATH/approval-at-head.py"
+        echo "judge: $GITHUB_ACTION_PATH"
+        case "$AAH_MODE" in
+          judge)
+            python3 "$script" --repo "$AAH_REPO" --pr "$AAH_PR" --head-sha "$AAH_HEAD_SHA" ;;
+          retrigger)
+            python3 "$script" --retrigger --repo "$AAH_REPO" --head-sha "$AAH_HEAD_SHA" --workflow "$AAH_WORKFLOW" ;;
+          *)
+            echo "::error::mode [$AAH_MODE] is neither judge nor retrigger"; exit 2 ;;
+        esac

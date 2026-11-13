@@ -22,7 +22,7 @@ for marker in .github/scripts/tests profile; do
     exit 2
   fi
 done
-CHECKER="$HERE/../approval-at-head.py"
+CHECKER="$REPO_ROOT/.github/actions/approval-at-head/approval-at-head.py"
 FX="$HERE/approval-at-head-fixtures.py"
 [ -f "$CHECKER" ] || { echo "FAIL: checker not found at $CHECKER" >&2; exit 1; }
 [ -f "$FX" ] || { echo "FAIL: fixtures not found at $FX" >&2; exit 1; }

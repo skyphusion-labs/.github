@@ -1,7 +1,8 @@
 name: approval-at-head-test
 
 # fleet-chezmoi#2386. Hermetic self-test of the org-wide approval-at-head script
-# (.github/scripts/approval-at-head.py) against a local fixture API. No token.
+# (.github/actions/approval-at-head/approval-at-head.py) against a local fixture
+# API. No token.
 # 31 cases, green and red in one run, so a script that always passes or always
 # refuses cannot pass. The final step proves the suite RAN to completion: silence,
 # a missing count or a missing completion line is red.
@@ -29,7 +30,7 @@ jobs:
         run: |
           set -euo pipefail
           python3 -c 'import ast, sys; ast.parse(open(sys.argv[1], encoding="utf-8").read())' \
-            .github/scripts/approval-at-head.py
+            .github/actions/approval-at-head/approval-at-head.py
           bash -n .github/scripts/tests/approval-at-head.test.sh
 
       - name: self-test the approval-at-head script
@@ -37,6 +38,36 @@ jobs:
           set -euo pipefail
           bash .github/scripts/tests/approval-at-head.test.sh \
             | tee "$RUNNER_TEMP/approval-at-head.out"
+
+      # Wiring smoke for action.yml itself: the composite must reach the script and
+      # pass its exit status through. A short sha is refused by the script before any
+      # API call, so both cases must FAIL; an action that swallowed the exit code, or
+      # never ran the script, would report success here.
+      - name: smoke -- judge with a short sha must fail
+        id: smoke_short
+        continue-on-error: true
+        uses: ./.github/actions/approval-at-head
+        with:
+          mode: judge
+          head-sha: abc1234
+          pr-number: "1"
+
+      - name: smoke -- an unknown mode must fail
+        id: smoke_mode
+        continue-on-error: true
+        uses: ./.github/actions/approval-at-head
+        with:
+          mode: nonsense
+          head-sha: abc1234
+
+      - name: smoke -- both refusals reached the caller
+        env:
+          SHORT: ${{ steps.smoke_short.outcome }}
+          MODE: ${{ steps.smoke_mode.outcome }}
+        run: |
+          set -euo pipefail
+          echo "short-sha outcome=$SHORT unknown-mode outcome=$MODE"
+          [ "$SHORT" = failure ] && [ "$MODE" = failure ]
 
       - name: floor -- prove the suite RAN
         if: always()
