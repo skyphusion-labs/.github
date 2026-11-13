@@ -33,6 +33,19 @@ Two repo-level rulesets add one approval, plus required checks `CodeQL` and `cov
 To re-measure, run `gh api repos/skyphusion-labs/.github/rules/branches/main -q '.[]|[.ruleset_id,.type]|@tsv'`. It lists what gates main. Ruleset 18677665 is absent from the output.
 Tracked in .github#50. Measured 2026-10-08.
 
+## Org-wide gate: approval-at-head (fleet-chezmoi#2386)
+
+The composite action `.github/actions/approval-at-head/` (`action.yml` + `approval-at-head.py`) is the
+judge. The reusable workflows that other repos call pin it at a LITERAL full sha, and callers pin the
+reusables by sha, so a change here changes nothing until someone re-pins. The runner downloads the action
+at that sha; there is no checkout step, so a PR can never edit the script that judges it, in this repo
+or any other. The gate passes only when an approval was submitted after the remote first saw the PR
+head; it exists because `gh pr update-branch` carries an old approval forward and no GitHub ruleset flag
+catches that. BOOTSTRAP ORDER: the action lands on main first; a later PR adds or re-pins the reusables
+to that main sha, so a reusable on main never points at an unmerged sha. Test:
+`bash .github/scripts/tests/approval-at-head.test.sh` (hermetic, no token), run by
+`approval-at-head-test.yml`.
+
 ## Documentation map
 
 - `docs/claude-md-standard.md` -- the authoring standard every other repo's `CLAUDE.md` is

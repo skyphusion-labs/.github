@@ -1,0 +1,90 @@
+name: approval-at-head-test
+
+# fleet-chezmoi#2386. Hermetic self-test of the org-wide approval-at-head script
+# (.github/actions/approval-at-head/approval-at-head.py) against a local fixture
+# API. No token.
+# 31 cases, green and red in one run, so a script that always passes or always
+# refuses cannot pass. The final step proves the suite RAN to completion: silence,
+# a missing count or a missing completion line is red.
+#
+# Not yet a required context on this repo. Requiring `approval-at-head-test` in
+# repo ruleset 19788249 is the lead's step after this lands.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  approval-at-head-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: syntax-check the script and its suite
+        run: |
+          set -euo pipefail
+          python3 -c 'import ast, sys; ast.parse(open(sys.argv[1], encoding="utf-8").read())' \
+            .github/actions/approval-at-head/approval-at-head.py
+          bash -n .github/scripts/tests/approval-at-head.test.sh
+
+      - name: self-test the approval-at-head script
+        run: |
+          set -euo pipefail
+          bash .github/scripts/tests/approval-at-head.test.sh \
+            | tee "$RUNNER_TEMP/approval-at-head.out"
+
+      # Wiring smoke for action.yml itself: the composite must reach the script and
+      # pass its exit status through. A short sha is refused by the script before any
+      # API call, so both cases must FAIL; an action that swallowed the exit code, or
+      # never ran the script, would report success here.
+      - name: smoke -- judge with a short sha must fail
+        id: smoke_short
+        continue-on-error: true
+        uses: ./.github/actions/approval-at-head
+        with:
+          mode: judge
+          head-sha: abc1234
+          pr-number: "1"
+
+      - name: smoke -- an unknown mode must fail
+        id: smoke_mode
+        continue-on-error: true
+        uses: ./.github/actions/approval-at-head
+        with:
+          mode: nonsense
+          head-sha: abc1234
+
+      - name: smoke -- both refusals reached the caller
+        env:
+          SHORT: ${{ steps.smoke_short.outcome }}
+          MODE: ${{ steps.smoke_mode.outcome }}
+        run: |
+          set -euo pipefail
+          echo "short-sha outcome=$SHORT unknown-mode outcome=$MODE"
+          [ "$SHORT" = failure ] && [ "$MODE" = failure ]
+
+      - name: floor -- prove the suite RAN
+        if: always()
+        run: |
+          set -euo pipefail
+          f="$RUNNER_TEMP/approval-at-head.out"
+          if [ ! -s "$f" ]; then
+            echo "::error::the approval-at-head suite produced NO output. Silence is not a pass."
+            exit 1
+          fi
+          if ! grep -q '^assertions=' "$f"; then
+            echo "::error::the suite emitted no assertion count."
+            exit 1
+          fi
+          if ! grep -q 'approval-at-head self-test: OK' "$f"; then
+            echo "::error::the suite did not print its completion line, so it did not finish."
+            exit 1
+          fi
+          echo "floor OK: the approval-at-head suite ran to completion."
+          grep -E '^(cases_run|assertions)=' "$f"
