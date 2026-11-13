@@ -105,7 +105,7 @@
     "owner": "skyphusion-labs",
     "repo": "search-mcp",
     "description": "Cloudflare AI Search toolkit: MCP server, streaming /ask Worker, docs widget, and git-to-R2 corpus sync. AGPL.",
-    "homepage": "https://github.com/skyphusion-labs/search-mcp#readme"
+    "homepage": "https://search-mcp.dev"
   },
   {
     "owner": "skyphusion-labs",
