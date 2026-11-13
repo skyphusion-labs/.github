@@ -110,8 +110,7 @@
   {
     "owner": "skyphusion-labs",
     "repo": "search-mcp-site",
-    "description": "Landing and docs site for search-mcp, the Cloudflare AI Search toolkit (search-mcp.dev). AGPL.",
-    "homepage": "https://search-mcp.dev"
+    "description": "Landing and docs site for search-mcp, the Cloudflare AI Search toolkit (search-mcp.dev)"
   },
   {
     "owner": "skyphusion-labs",
