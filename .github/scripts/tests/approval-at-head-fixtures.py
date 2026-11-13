@@ -176,8 +176,15 @@ def serve(d, portfile):
                 return
             self.send_response(r.get("status", 200))
             if "next" in r:
-                host = self.headers.get("Host")
-                self.send_header("Link", f'<http://{host}{r["next"]}>; rel="next"')
+                # The Link target is built from the server's OWN bound address and a
+                # route-file path, never from request data (the Host header was
+                # py/http-response-splitting, .github code-scanning alert 1). The route
+                # path is checked for CR/LF so a bad fixture cannot split the header.
+                nxt = r["next"]
+                if "\r" in nxt or "\n" in nxt:
+                    raise ValueError("fixture next link carries CR or LF")
+                port = self.server.server_address[1]
+                self.send_header("Link", f'<http://127.0.0.1:{port}{nxt}>; rel="next"')
             self.send_header("Content-Type", "application/json")
             self.end_headers()
             if r.get("body") is not None:
