@@ -935,7 +935,7 @@
   },
   {
     "owner": "skyphusion-labs",
-    "repo": "wordpress-on-cloudflare",
+    "repo": "pagefeather",
     "family": "wordpress",
     "topics": [
       "cloudflare",

@@ -264,7 +264,7 @@
   },
   {
     "owner": "skyphusion-labs",
-    "repo": "wordpress-on-cloudflare",
+    "repo": "pagefeather",
     "description": "Framework for many WordPress and WooCommerce sites on your own Cloudflare Workers for Platforms account, provisioned by one command or by a Worker, plus the research behind it.",
     "homepage": "https://skyphusion.org"
   },

@@ -452,8 +452,8 @@
   },
   {
     "owner": "skyphusion-labs",
-    "repo": "wordpress-on-cloudflare",
-    "display": "WordPress on Cloudflare",
+    "repo": "pagefeather",
+    "display": "Pagefeather",
     "tagline": "Many WordPress sites on Workers for Platforms.",
     "accent": "#0ea5e9",
     "accent2": "#0369a1",
