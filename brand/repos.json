@@ -192,6 +192,16 @@
   },
   {
     "owner": "skyphusion-labs",
+    "repo": "search-mcp-site",
+    "display": "search-mcp-site",
+    "tagline": "Landing and docs site for search-mcp.",
+    "accent": "#60a5fa",
+    "accent2": "#06b6d4",
+    "chip": "AGPL",
+    "motif": "search"
+  },
+  {
+    "owner": "skyphusion-labs",
     "repo": "security-audit",
     "display": "security-audit",
     "tagline": "Adversarial LLM security audits on Cloudflare Workers.",
@@ -452,8 +462,8 @@
   },
   {
     "owner": "skyphusion-labs",
-    "repo": "wordpress-on-cloudflare",
-    "display": "WordPress on Cloudflare",
+    "repo": "pagefeather",
+    "display": "Pagefeather",
     "tagline": "Many WordPress sites on Workers for Platforms.",
     "accent": "#0ea5e9",
     "accent2": "#0369a1",

@@ -105,7 +105,12 @@
     "owner": "skyphusion-labs",
     "repo": "search-mcp",
     "description": "Cloudflare AI Search toolkit: MCP server, streaming /ask Worker, docs widget, and git-to-R2 corpus sync. AGPL.",
-    "homepage": "https://github.com/skyphusion-labs/search-mcp#readme"
+    "homepage": "https://search-mcp.dev"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "search-mcp-site",
+    "description": "Landing and docs site for search-mcp, the Cloudflare AI Search toolkit (search-mcp.dev)"
   },
   {
     "owner": "skyphusion-labs",
@@ -264,7 +269,7 @@
   },
   {
     "owner": "skyphusion-labs",
-    "repo": "wordpress-on-cloudflare",
+    "repo": "pagefeather",
     "description": "Framework for many WordPress and WooCommerce sites on your own Cloudflare Workers for Platforms account, provisioned by one command or by a Worker, plus the research behind it.",
     "homepage": "https://skyphusion.org"
   },
