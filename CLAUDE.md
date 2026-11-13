@@ -33,6 +33,17 @@ Two repo-level rulesets add one approval, plus required checks `CodeQL` and `cov
 To re-measure, run `gh api repos/skyphusion-labs/.github/rules/branches/main -q '.[]|[.ruleset_id,.type]|@tsv'`. It lists what gates main. Ruleset 18677665 is absent from the output.
 Tracked in .github#50. Measured 2026-10-08.
 
+## Org-wide reusable workflow: approval-at-head (fleet-chezmoi#2386)
+
+`.github/workflows/approval-at-head-reusable.yml` and `approval-at-head-retrigger-reusable.yml`,
+with the script `.github/scripts/approval-at-head.py`, are called by OTHER repos, pinned by sha.
+A change here changes nothing until a caller re-pins. The gate passes only when an approval was
+submitted after the remote first saw the PR head; it exists because `gh pr update-branch` carries
+an old approval forward and no GitHub ruleset flag catches that. Both reusables check out THIS repo
+at `job.workflow_sha`, never the caller, so a PR cannot edit its own judge. Test:
+`bash .github/scripts/tests/approval-at-head.test.sh` (hermetic, no token), run by
+`approval-at-head-test.yml`.
+
 ## Documentation map
 
 - `docs/claude-md-standard.md` -- the authoring standard every other repo's `CLAUDE.md` is

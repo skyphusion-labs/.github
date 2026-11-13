@@ -1,0 +1,78 @@
+name: approval-at-head-retrigger-reusable
+
+# fleet-chezmoi#2386. ORG-WIDE REUSABLE, the review half of approval-at-head.
+# Callers pin it by FULL sha, from a workflow on pull_request_review
+# [submitted, dismissed]:
+#
+#   jobs:
+#     approval-at-head-retrigger:
+#       uses: skyphusion-labs/.github/.github/workflows/approval-at-head-retrigger-reusable.yml@<sha>
+#       with:
+#         head_sha: ${{ github.event.pull_request.head.sha }}
+#
+# It does NOT judge. It waits for the pull_request run of the caller's
+# approval-at-head.yml for the head to finish, then RE-RUNS it. A re-run is a new
+# attempt in the SAME check suite and replaces that suite's check; a second check
+# of the same name in another suite cannot clear a red one (measured,
+# fleet-chezmoi#2626). The script comes from this repo at the pinned sha, as in
+# approval-at-head-reusable.yml.
+#
+# This job's check is NOT a required context. If it fails the gate stays red, the
+# safe side. Known red-side case: a fork PR's review event gets a read-only token,
+# the re-run is refused, and a maintainer re-runs the gate by hand.
+on:
+  workflow_call:
+    inputs:
+      head_sha:
+        description: "the FULL 40-char head sha the review was raised for"
+        required: true
+        type: string
+      gate_workflow:
+        description: "the caller repo's gate workflow file name"
+        required: false
+        type: string
+        default: approval-at-head.yml
+
+permissions:
+  contents: read
+  actions: write
+
+jobs:
+  retrigger:
+    name: retrigger
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      actions: write
+    steps:
+      - name: the script is the pinned reusable, never the caller
+        env:
+          WF_REPO: ${{ job.workflow_repository }}
+          WF_SHA: ${{ job.workflow_sha }}
+        run: |
+          set -euo pipefail
+          echo "judge: $WF_REPO@$WF_SHA"
+          if [ -z "$WF_REPO" ] || ! printf '%s' "$WF_SHA" | grep -Eq '^[0-9a-f]{40}$'; then
+            echo "::error::job.workflow_repository or job.workflow_sha is empty or malformed; refusing rather than running the caller's own tree."
+            exit 2
+          fi
+
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: ${{ job.workflow_repository }}
+          ref: ${{ job.workflow_sha }}
+          path: _approval-at-head
+          persist-credentials: false
+
+      # Exit 0 re-run requested, 2 could not (no run, never finished, refused).
+      - name: re-run the pull_request suite run for this head
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          HEAD_SHA: ${{ inputs.head_sha }}
+          GATE_WORKFLOW: ${{ inputs.gate_workflow }}
+        run: |
+          set -euo pipefail
+          python3 _approval-at-head/.github/scripts/approval-at-head.py --retrigger \
+            --repo "$REPO" --head-sha "$HEAD_SHA" --workflow "$GATE_WORKFLOW"
