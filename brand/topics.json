@@ -364,6 +364,22 @@
   },
   {
     "owner": "skyphusion-labs",
+    "repo": "search-mcp-site",
+    "family": "search-mcp",
+    "topics": [
+      "agpl",
+      "ai-search",
+      "cloudflare-ai-search",
+      "cloudflare-workers",
+      "documentation",
+      "mcp",
+      "open-source",
+      "search-mcp",
+      "static-site"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
     "repo": "security-audit",
     "family": "infra",
     "topics": [
