@@ -8,7 +8,8 @@ Everything we make is **open source and not for sale**. Free use forever, made w
 - Conrad's engineering blog: [skyphusion.net](https://skyphusion.net)
 - Conrad's GitHub page: [github.skyphusion.net](https://github.skyphusion.net)
 - This page on the web: [github.skyphusion.org](https://github.skyphusion.org)
-- Vivijure: [vivijure.dev](https://vivijure.dev) ([live demo](https://demo.vivijure.com))
+- Vivijure: [vivijure.dev](https://vivijure.dev)
+- Pagefeather: [pagefeather.dev](https://pagefeather.dev)
 - X: [x.com/rockrockenhaus](https://x.com/rockrockenhaus)
 - LinkedIn: [linkedin.com/in/skyphusion](https://www.linkedin.com/in/skyphusion/)
 - Email: [conrad@skyphusion.org](mailto:conrad@skyphusion.org)
@@ -21,7 +22,7 @@ Everything we make is **open source and not for sale**. Free use forever, made w
 
 An AI film production studio for people who want to make movies on their own hardware, now at **v1.0.0**. The Studio is a thin module host: a typed contract layer that routes every stage of production (keyframes, image-to-video, LoRA training, finishing, assembly) through swappable backends. **Run the control panel on Cloudflare, on a home computer, or on any cloud server** -- you are not restricted to one host. Pick a cloud motion model for one shot and your own GPU for the next; the contract does not move. **GPU money goes to GPU work only**: concat, mux, captions, portrait prep, beat sync, and loudness normalization run on cheap always-on CPU containers you host ([vivijure-cf/containers](https://github.com/skyphusion-labs/vivijure-cf/tree/main/containers)).
 
-- **[vivijure](https://github.com/skyphusion-labs/vivijure)**: the constellation map. Start here for the full layout. Product site: [vivijure.dev](https://vivijure.dev) ([live demo](https://demo.vivijure.com)).
+- **[vivijure](https://github.com/skyphusion-labs/vivijure)**: the constellation map. Start here for the full layout. Product site: [vivijure.dev](https://vivijure.dev).
 - **[vivijure-cf](https://github.com/skyphusion-labs/vivijure-cf)**: Cloudflare Workers control panel (planner, cast, render orchestration, module registry) on the Workers free tier.
 - **[vivijure-local](https://github.com/skyphusion-labs/vivijure-local)**: the same control panel on a home PC or any cloud server (Node, SQLite, S3/MinIO). No Cloudflare account required.
 - **[vivijure-core](https://github.com/skyphusion-labs/vivijure-core)**: shared orchestration both hosts build on (module registry, film pipeline, Platform ICD).
@@ -34,6 +35,14 @@ An AI film production studio for people who want to make movies on their own har
 - **[vivijure-com](https://github.com/skyphusion-labs/vivijure-com)**: the product site and showcase at [vivijure.dev](https://vivijure.dev).
 
 The full map is in [the constellation write-up](https://skyphusion.net/blog/vivijure-constellation/).
+
+### [pagefeather](https://github.com/skyphusion-labs/pagefeather): WordPress on your Cloudflare account
+
+A flagship beside Vivijure. WordPress and WooCommerce on Cloudflare Workers, in **your** Cloudflare account (**v0.1.0**). There is no hosted Pagefeather service. One site can use the built-in Durable Object SQLite path, or Hyperdrive to MySQL you run yourself. Many sites on one account use Workers for Platforms. Guest pages can come from the edge cache. A live shop on this stack: [ggc.sh](https://ggc.sh). Product site: [pagefeather.dev](https://pagefeather.dev). Start at [docs/guide/start-here.md](https://github.com/skyphusion-labs/pagefeather/blob/main/docs/guide/start-here.md). Read the [known limits](https://github.com/skyphusion-labs/pagefeather/blob/main/docs/guide/limits.md) before you build.
+
+- **[pagefeather](https://github.com/skyphusion-labs/pagefeather)**: the engine, guides, measured limits, and IaC.
+- **[pagefeather-dev](https://github.com/skyphusion-labs/pagefeather-dev)**: the marketing theme and page fixtures for [pagefeather.dev](https://pagefeather.dev).
+- **[skyphusion-ai](https://github.com/skyphusion-labs/skyphusion-ai)**: Workers AI, AI Gateway, and AI Search for WordPress (GPL plugin).
 
 ### [postern](https://github.com/skyphusion-labs/postern): email for humans and agents
 
@@ -63,7 +72,7 @@ Open MIT tooling for PR and full-repo security reviews via Cloudflare Workers AI
 
 ### [search-mcp](https://github.com/skyphusion-labs/search-mcp): docs search for agents and browsers
 
-Cloudflare AI Search toolkit: MCP server, streaming `/ask` Worker, embeddable ask widget, and git-to-R2 corpus sync. Powers search on vivijure.dev and skyphusion.net.
+Cloudflare AI Search toolkit for self-host: MCP server, streaming `/ask` Worker, embeddable ask widget, and git-to-R2 corpus sync. Skyphusion Labs no longer runs a hosted instance.
 
 ---
 
@@ -100,7 +109,7 @@ Control planes live where they fit: Cloudflare Workers (and friends: Durable Obj
 
 ## Where we are going
 
-Vivijure **v1.0.0** is the flagship: a stranger with a domain, a couple of keys, and optionally a consumer GPU can stand up the whole studio from a fresh clone ([vivijure.dev](https://vivijure.dev)). Product focus stays **Vivijure + Postern**. Prism stays open for public BYOK play. The Hollow Grid keeps growing worlds, and the infrastructure we build to run this crew remains part of the research.
+Vivijure **v1.0.0** is a flagship: a stranger with a domain, a couple of keys, and optionally a consumer GPU can stand up the whole studio from a fresh clone ([vivijure.dev](https://vivijure.dev)). Pagefeather is a flagship too: WordPress on your own Cloudflare account ([pagefeather.dev](https://pagefeather.dev)). Product focus stays **Vivijure, Pagefeather, and Postern**. Prism stays open for public BYOK play. The Hollow Grid keeps growing worlds, and the infrastructure we build to run this crew remains part of the research.
 
 Watch this space.
 
@@ -117,7 +126,7 @@ Watch this space.
   <a href="https://github.skyphusion.net">github.skyphusion.net</a><span class="sep"> / </span>
   <a href="https://github.com/skyphusion-labs">github.com/skyphusion-labs</a><span class="sep"> / </span>
   <a href="https://vivijure.dev">vivijure.dev</a><span class="sep"> / </span>
-  <a href="https://demo.vivijure.com">Vivijure demo</a><span class="sep"> / </span>
+  <a href="https://pagefeather.dev">pagefeather.dev</a><span class="sep"> / </span>
   <a href="https://x.com/rockrockenhaus">x.com/rockrockenhaus</a><span class="sep"> / </span>
   <a href="https://www.linkedin.com/in/skyphusion/">LinkedIn</a><span class="sep"> / </span>
   <a href="mailto:conrad@skyphusion.org">conrad@skyphusion.org</a>

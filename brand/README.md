@@ -74,7 +74,7 @@ The script uses `PUT /repos/{owner}/{repo}/topics` (full replace). Always edit `
 
 Topic conventions (org-wide):
 
-- Constellation anchors: `vivijure`, `vivijure-module`, `the-hollow-grid`, `hollow-grid`, `postern`, `prism`, `common-thread`, `search-mcp`.
+- Constellation anchors: `vivijure`, `vivijure-module`, `pagefeather`, `the-hollow-grid`, `hollow-grid`, `postern`, `prism`, `common-thread`, `search-mcp`.
 - House stack: `cloudflare-workers`, `self-hosted`, `agpl`, `open-source`, `typescript` / `python` / `golang` as appropriate.
 - GPU satellites: `runpod`, `cuda`, `gpu`, plus model-specific tags (`sdxl`, `ltx-video`, `real-esrgan`, …).
 - Do not exceed 20 topics; prefer discoverability over exhaustiveness.

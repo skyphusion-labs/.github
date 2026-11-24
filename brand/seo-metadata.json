@@ -55,15 +55,50 @@
   },
   {
     "owner": "skyphusion-labs",
+    "repo": "mt4-runtime",
+    "description": "Linux runtime image for Wine, an operator-installed MetaTrader 4 terminal, and cloudflared.",
+    "homepage": ""
+  },
+  {
+    "owner": "skyphusion-labs",
     "repo": "mud-bots",
     "description": "AI players for The Hollow Grid: LLM bots on Workers AI that make real moral choices via structured game state.",
     "homepage": "https://hollow.skyphusion.org"
   },
   {
     "owner": "skyphusion-labs",
+    "repo": "pagefeather",
+    "description": "WordPress and WooCommerce on your own Cloudflare account. Workers Free or Paid, Durable Object SQLite or Hyperdrive MySQL, and Workers for Platforms for many sites. No hosted Pagefeather service.",
+    "homepage": "https://pagefeather.dev"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "pagefeather-dev",
+    "description": "Product site for Pagefeather: WordPress and WooCommerce on your own Cloudflare account (pagefeather.dev).",
+    "homepage": "https://pagefeather.dev"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "poly-styrene",
+    "description": "Discord bot for technical help in a cybersecurity channel. Workers AI through an AI Gateway, one Ollama model on RunPod, and a role-gated lab with no network. AGPL-3.0."
+  },
+  {
+    "owner": "skyphusion-labs",
     "repo": "postern",
     "description": "Self-hostable email for humans and agents on Cloudflare: send, receive, search, MCP, IMAP, and webmail. Identity-bound credentials (v1.4).",
     "homepage": "https://demo.posternonline.com"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "postern-demo",
+    "description": "Deploys the public postern demo (demo.posternonline.com) from a pinned release via Workers Builds",
+    "homepage": "https://demo.posternonline.com"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "postern-site",
+    "description": "Marketing site for Postern, self-hosted email for humans and agents (posternonline.com)",
+    "homepage": "https://posternonline.com"
   },
   {
     "owner": "skyphusion-labs",
@@ -104,8 +139,8 @@
   {
     "owner": "skyphusion-labs",
     "repo": "search-mcp",
-    "description": "Cloudflare AI Search toolkit: MCP server, streaming /ask Worker, docs widget, and git-to-R2 corpus sync. AGPL.",
-    "homepage": "https://search-mcp.dev"
+    "description": "Cloudflare AI Search toolkit for self-host: MCP server, streaming /ask Worker, docs widget, and git-to-R2 corpus sync. AGPL.",
+    "homepage": "https://github.com/skyphusion-labs/search-mcp"
   },
   {
     "owner": "skyphusion-labs",
@@ -117,6 +152,12 @@
     "repo": "security-audit",
     "description": "Adversarial LLM security audits for GitHub PRs and repos via Cloudflare Workers AI + AI Gateway (advisory CI layer, MIT).",
     "homepage": "https://skyphusion.net/blog/security-audit/"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "skyphusion-ai",
+    "description": "Skyphusion AI for Cloudflare. Workers AI, AI Gateway, and AI Search for WordPress and WooCommerce, from Settings or WP-CLI. GPL-2.0-or-later.",
+    "homepage": "https://wordpress.org/plugins/skyphusion-ai/"
   },
   {
     "owner": "skyphusion-labs",
@@ -252,43 +293,8 @@
   },
   {
     "owner": "skyphusion-labs",
-    "repo": "poly-styrene",
-    "description": "Discord bot for technical help in a cybersecurity channel. Workers AI through an AI Gateway, one Ollama model on RunPod, and a role-gated lab with no network. AGPL-3.0."
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "skyphusion-ai",
-    "description": "Skyphusion AI for Cloudflare. Workers AI, AI Gateway, and AI Search for WordPress and WooCommerce, from Settings or WP-CLI. GPL-2.0-or-later.",
-    "homepage": "https://skyphusion.org"
-  },
-  {
-    "owner": "skyphusion-labs",
     "repo": "zaraz-consent",
     "description": "WordPress must-use drop-in that reopens the Cloudflare Zaraz consent modal and reads the consent cookie. It does not gate scripts. No banner library. GPL-2.0-or-later.",
     "homepage": "https://skyphusion.org"
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "pagefeather",
-    "description": "Framework for many WordPress and WooCommerce sites on your own Cloudflare Workers for Platforms account, provisioned by one command or by a Worker, plus the research behind it.",
-    "homepage": "https://skyphusion.org"
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "mt4-runtime",
-    "description": "Linux runtime image for Wine, an operator-installed MetaTrader 4 terminal, and cloudflared.",
-    "homepage": ""
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "postern-demo",
-    "description": "Deploys the public postern demo (demo.posternonline.com) from a pinned release via Workers Builds",
-    "homepage": "https://demo.posternonline.com"
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "postern-site",
-    "description": "Marketing site for Postern, self-hosted email for humans and agents (posternonline.com)",
-    "homepage": "https://posternonline.com"
   }
 ]
