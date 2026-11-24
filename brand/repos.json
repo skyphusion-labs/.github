@@ -464,10 +464,20 @@
     "owner": "skyphusion-labs",
     "repo": "pagefeather",
     "display": "Pagefeather",
-    "tagline": "Many WordPress sites on Workers for Platforms.",
+    "tagline": "WordPress and WooCommerce on your own Cloudflare account.",
     "accent": "#0ea5e9",
     "accent2": "#0369a1",
     "chip": "WFP",
+    "motif": "blog"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "pagefeather-dev",
+    "display": "pagefeather.dev",
+    "tagline": "Product site for WordPress on your Cloudflare account.",
+    "accent": "#0ea5e9",
+    "accent2": "#0369a1",
+    "chip": "SITE",
     "motif": "blog"
   },
   {

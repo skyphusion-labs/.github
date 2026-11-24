@@ -914,7 +914,7 @@
   {
     "owner": "skyphusion-labs",
     "repo": "skyphusion-ai",
-    "family": "wordpress",
+    "family": "pagefeather",
     "topics": [
       "ai-gateway",
       "ai-search",
@@ -922,6 +922,7 @@
       "embeddings",
       "gpl",
       "open-source",
+      "pagefeather",
       "php",
       "vectorize",
       "woocommerce",
@@ -952,7 +953,7 @@
   {
     "owner": "skyphusion-labs",
     "repo": "pagefeather",
-    "family": "wordpress",
+    "family": "pagefeather",
     "topics": [
       "cloudflare",
       "cloudflare-d1",
@@ -964,9 +965,9 @@
       "hyperdrive",
       "litestream",
       "mysql",
+      "pagefeather",
       "php",
       "php-wasm",
-      "planetscale",
       "serverless",
       "sqlite",
       "terraform",
@@ -974,6 +975,21 @@
       "woocommerce",
       "wordpress",
       "workers-for-platforms"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "pagefeather-dev",
+    "family": "pagefeather",
+    "topics": [
+      "cloudflare-workers",
+      "landing-page",
+      "open-source",
+      "pagefeather",
+      "promotional-site",
+      "static-site",
+      "woocommerce",
+      "wordpress"
     ]
   },
   {

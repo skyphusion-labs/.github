@@ -259,7 +259,7 @@
     "owner": "skyphusion-labs",
     "repo": "skyphusion-ai",
     "description": "Skyphusion AI for Cloudflare. Workers AI, AI Gateway, and AI Search for WordPress and WooCommerce, from Settings or WP-CLI. GPL-2.0-or-later.",
-    "homepage": "https://skyphusion.org"
+    "homepage": "https://pagefeather.dev"
   },
   {
     "owner": "skyphusion-labs",
@@ -270,8 +270,14 @@
   {
     "owner": "skyphusion-labs",
     "repo": "pagefeather",
-    "description": "Framework for many WordPress and WooCommerce sites on your own Cloudflare Workers for Platforms account, provisioned by one command or by a Worker, plus the research behind it.",
-    "homepage": "https://skyphusion.org"
+    "description": "WordPress and WooCommerce on your own Cloudflare account. Workers Free or Paid, Durable Object SQLite or Hyperdrive MySQL, and Workers for Platforms for many sites. No hosted Pagefeather service.",
+    "homepage": "https://pagefeather.dev"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "pagefeather-dev",
+    "description": "Product site for Pagefeather: WordPress and WooCommerce on your own Cloudflare account (pagefeather.dev).",
+    "homepage": "https://pagefeather.dev"
   },
   {
     "owner": "skyphusion-labs",
