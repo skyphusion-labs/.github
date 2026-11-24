@@ -180,17 +180,6 @@
   },
   {
     "owner": "skyphusion-labs",
-    "repo": "mt4-runtime",
-    "family": "infra",
-    "topics": [
-      "cloudflared",
-      "docker",
-      "metatrader",
-      "wine"
-    ]
-  },
-  {
-    "owner": "skyphusion-labs",
     "repo": "mud-bots",
     "family": "hollow-grid",
     "topics": [
@@ -211,68 +200,6 @@
       "text-game",
       "the-hollow-grid",
       "websocket",
-      "workers-ai"
-    ]
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "pagefeather",
-    "family": "wordpress",
-    "topics": [
-      "cloudflare",
-      "cloudflare-d1",
-      "cloudflare-r2",
-      "cloudflare-workers",
-      "docker",
-      "durable-objects",
-      "gpl",
-      "hyperdrive",
-      "litestream",
-      "mysql",
-      "php",
-      "php-wasm",
-      "planetscale",
-      "serverless",
-      "sqlite",
-      "terraform",
-      "webassembly",
-      "woocommerce",
-      "wordpress",
-      "workers-for-platforms"
-    ]
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "pagefeather-dev",
-    "family": "wordpress",
-    "topics": [
-      "cloudflare",
-      "cloudflare-workers",
-      "gpl",
-      "open-source",
-      "pagefeather",
-      "php",
-      "wordpress",
-      "wordpress-theme"
-    ]
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "poly-styrene",
-    "family": "discord-bots",
-    "topics": [
-      "agpl",
-      "ai-gateway",
-      "cloudflare-workers",
-      "cybersecurity",
-      "discord",
-      "discord-bot",
-      "llm",
-      "ollama",
-      "open-source",
-      "runpod",
-      "self-hosted",
-      "typescript",
       "workers-ai"
     ]
   },
@@ -299,32 +226,6 @@
       "smtp-server",
       "vectorize",
       "webmail"
-    ]
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "postern-demo",
-    "family": "postern",
-    "topics": [
-      "cloudflare-workers",
-      "demo",
-      "email",
-      "open-source",
-      "postern",
-      "self-hosted"
-    ]
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "postern-site",
-    "family": "postern",
-    "topics": [
-      "cloudflare-workers",
-      "email",
-      "landing-page",
-      "open-source",
-      "postern",
-      "static-site"
     ]
   },
   {
@@ -495,25 +396,6 @@
       "pull-request",
       "security",
       "security-audit",
-      "workers-ai"
-    ]
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "skyphusion-ai",
-    "family": "wordpress",
-    "topics": [
-      "ai-gateway",
-      "ai-search",
-      "cloudflare",
-      "embeddings",
-      "gpl",
-      "open-source",
-      "php",
-      "vectorize",
-      "woocommerce",
-      "wordpress",
-      "wordpress-plugin",
       "workers-ai"
     ]
   },
@@ -1011,6 +893,46 @@
   },
   {
     "owner": "skyphusion-labs",
+    "repo": "poly-styrene",
+    "family": "discord-bots",
+    "topics": [
+      "agpl",
+      "ai-gateway",
+      "cloudflare-workers",
+      "cybersecurity",
+      "discord",
+      "discord-bot",
+      "llm",
+      "ollama",
+      "open-source",
+      "runpod",
+      "self-hosted",
+      "typescript",
+      "workers-ai"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "skyphusion-ai",
+    "family": "pagefeather",
+    "topics": [
+      "ai-gateway",
+      "ai-search",
+      "cloudflare",
+      "embeddings",
+      "gpl",
+      "open-source",
+      "pagefeather",
+      "php",
+      "vectorize",
+      "woocommerce",
+      "wordpress",
+      "wordpress-plugin",
+      "workers-ai"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
     "repo": "zaraz-consent",
     "family": "wordpress",
     "topics": [
@@ -1026,6 +948,85 @@
       "wordpress",
       "wordpress-plugin",
       "zaraz"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "pagefeather",
+    "family": "pagefeather",
+    "topics": [
+      "cloudflare",
+      "cloudflare-d1",
+      "cloudflare-r2",
+      "cloudflare-workers",
+      "docker",
+      "durable-objects",
+      "gpl",
+      "hyperdrive",
+      "litestream",
+      "mysql",
+      "pagefeather",
+      "php",
+      "php-wasm",
+      "serverless",
+      "sqlite",
+      "terraform",
+      "webassembly",
+      "woocommerce",
+      "wordpress",
+      "workers-for-platforms"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "pagefeather-dev",
+    "family": "pagefeather",
+    "topics": [
+      "cloudflare-workers",
+      "landing-page",
+      "open-source",
+      "pagefeather",
+      "promotional-site",
+      "static-site",
+      "woocommerce",
+      "wordpress"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "mt4-runtime",
+    "family": "infra",
+    "topics": [
+      "cloudflared",
+      "docker",
+      "metatrader",
+      "wine"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "postern-demo",
+    "family": "postern",
+    "topics": [
+      "cloudflare-workers",
+      "demo",
+      "email",
+      "open-source",
+      "postern",
+      "self-hosted"
+    ]
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "postern-site",
+    "family": "postern",
+    "topics": [
+      "cloudflare-workers",
+      "email",
+      "landing-page",
+      "open-source",
+      "postern",
+      "static-site"
     ]
   }
 ]

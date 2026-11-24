@@ -38,7 +38,7 @@ The full map is in [the constellation write-up](https://skyphusion.net/blog/vivi
 
 ### [pagefeather](https://github.com/skyphusion-labs/pagefeather): WordPress on your Cloudflare account
 
-WordPress and WooCommerce on Cloudflare Workers, in **your** Cloudflare account. There is no hosted Pagefeather service. One site can use the built-in Durable Object SQLite path, or Hyperdrive to MySQL you run yourself. Many sites on one account use Workers for Platforms. Guest pages can come from the edge cache. A live shop on this stack: [ggc.sh](https://ggc.sh). Product site: [pagefeather.dev](https://pagefeather.dev). Start at [docs/guide/start-here.md](https://github.com/skyphusion-labs/pagefeather/blob/main/docs/guide/start-here.md).
+A flagship beside Vivijure. WordPress and WooCommerce on Cloudflare Workers, in **your** Cloudflare account (**v0.1.0**). There is no hosted Pagefeather service. One site can use the built-in Durable Object SQLite path, or Hyperdrive to MySQL you run yourself. Many sites on one account use Workers for Platforms. Guest pages can come from the edge cache. A live shop on this stack: [ggc.sh](https://ggc.sh). Product site: [pagefeather.dev](https://pagefeather.dev). Start at [docs/guide/start-here.md](https://github.com/skyphusion-labs/pagefeather/blob/main/docs/guide/start-here.md). Read the [known limits](https://github.com/skyphusion-labs/pagefeather/blob/main/docs/guide/limits.md) before you build.
 
 - **[pagefeather](https://github.com/skyphusion-labs/pagefeather)**: the engine, guides, measured limits, and IaC.
 - **[pagefeather-dev](https://github.com/skyphusion-labs/pagefeather-dev)**: the marketing theme and page fixtures for [pagefeather.dev](https://pagefeather.dev).

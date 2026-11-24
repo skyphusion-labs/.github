@@ -68,13 +68,13 @@
   {
     "owner": "skyphusion-labs",
     "repo": "pagefeather",
-    "description": "WordPress and WooCommerce on your own Cloudflare Worker or Workers for Platforms account. Built-in Durable Object SQLite or Hyperdrive MySQL. Guides, measured limits, and IaC. GPL.",
+    "description": "WordPress and WooCommerce on your own Cloudflare account. Workers Free or Paid, Durable Object SQLite or Hyperdrive MySQL, and Workers for Platforms for many sites. No hosted Pagefeather service.",
     "homepage": "https://pagefeather.dev"
   },
   {
     "owner": "skyphusion-labs",
     "repo": "pagefeather-dev",
-    "description": "Marketing theme and page fixtures for pagefeather.dev (WordPress on Cloudflare). Deployed from the pagefeather engine repo.",
+    "description": "Product site for Pagefeather: WordPress and WooCommerce on your own Cloudflare account (pagefeather.dev).",
     "homepage": "https://pagefeather.dev"
   },
   {
@@ -145,8 +145,7 @@
   {
     "owner": "skyphusion-labs",
     "repo": "search-mcp-site",
-    "description": "Archived landing and docs site for the search-mcp Cloudflare AI Search toolkit.",
-    "homepage": "https://github.com/skyphusion-labs/search-mcp"
+    "description": "Landing and docs site for search-mcp, the Cloudflare AI Search toolkit (search-mcp.dev)"
   },
   {
     "owner": "skyphusion-labs",
@@ -158,7 +157,7 @@
     "owner": "skyphusion-labs",
     "repo": "skyphusion-ai",
     "description": "Skyphusion AI for Cloudflare. Workers AI, AI Gateway, and AI Search for WordPress and WooCommerce, from Settings or WP-CLI. GPL-2.0-or-later.",
-    "homepage": "https://skyphusion.org"
+    "homepage": "https://pagefeather.dev"
   },
   {
     "owner": "skyphusion-labs",
