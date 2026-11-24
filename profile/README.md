@@ -10,6 +10,7 @@ Everything we make is **open source and not for sale**. Free use forever, made w
 - This page on the web: [github.skyphusion.org](https://github.skyphusion.org)
 - Vivijure: [vivijure.dev](https://vivijure.dev)
 - Pagefeather: [pagefeather.dev](https://pagefeather.dev)
+- search-mcp: [search-mcp.dev](https://search-mcp.dev)
 - X: [x.com/rockrockenhaus](https://x.com/rockrockenhaus)
 - LinkedIn: [linkedin.com/in/skyphusion](https://www.linkedin.com/in/skyphusion/)
 - Email: [conrad@skyphusion.org](mailto:conrad@skyphusion.org)
@@ -72,7 +73,7 @@ Open MIT tooling for PR and full-repo security reviews via Cloudflare Workers AI
 
 ### [search-mcp](https://github.com/skyphusion-labs/search-mcp): docs search for agents and browsers
 
-Cloudflare AI Search toolkit for self-host: MCP server, streaming `/ask` Worker, embeddable ask widget, and git-to-R2 corpus sync. Skyphusion Labs no longer runs a hosted instance.
+Cloudflare AI Search toolkit for self-host: MCP server, streaming `/ask` Worker, embeddable ask widget, and git-to-R2 corpus sync. Product site: [search-mcp.dev](https://search-mcp.dev). Skyphusion Labs does not run a shared hosted corpus for you; you deploy your own.
 
 ---
 
@@ -127,6 +128,7 @@ Watch this space.
   <a href="https://github.com/skyphusion-labs">github.com/skyphusion-labs</a><span class="sep"> / </span>
   <a href="https://vivijure.dev">vivijure.dev</a><span class="sep"> / </span>
   <a href="https://pagefeather.dev">pagefeather.dev</a><span class="sep"> / </span>
+  <a href="https://search-mcp.dev">search-mcp.dev</a><span class="sep"> / </span>
   <a href="https://x.com/rockrockenhaus">x.com/rockrockenhaus</a><span class="sep"> / </span>
   <a href="https://www.linkedin.com/in/skyphusion/">LinkedIn</a><span class="sep"> / </span>
   <a href="mailto:conrad@skyphusion.org">conrad@skyphusion.org</a>
