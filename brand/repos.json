@@ -102,6 +102,16 @@
   },
   {
     "owner": "skyphusion-labs",
+    "repo": "mt4-runtime",
+    "display": "mt4-runtime",
+    "tagline": "Linux runtime image: Wine, cloudflared, and an operator-installed MT4 terminal.",
+    "accent": "#60a5fa",
+    "accent2": "#06b6d4",
+    "chip": "RUNTIME",
+    "motif": "core"
+  },
+  {
+    "owner": "skyphusion-labs",
     "repo": "mud-bots",
     "display": "mud-bots",
     "tagline": "AI inhabitants of The Hollow Grid.",
@@ -112,12 +122,62 @@
   },
   {
     "owner": "skyphusion-labs",
+    "repo": "pagefeather",
+    "display": "Pagefeather",
+    "tagline": "WordPress on your Cloudflare account.",
+    "accent": "#0ea5e9",
+    "accent2": "#0369a1",
+    "chip": "WP",
+    "motif": "blog"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "pagefeather-dev",
+    "display": "pagefeather-dev",
+    "tagline": "Marketing theme for pagefeather.dev.",
+    "accent": "#0ea5e9",
+    "accent2": "#0369a1",
+    "chip": "SITE",
+    "motif": "blog"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "poly-styrene",
+    "display": "Poly Styrene",
+    "tagline": "Technical help in a cybersecurity channel.",
+    "accent": "#ef4444",
+    "accent2": "#f97316",
+    "chip": "DISCORD",
+    "motif": "discord"
+  },
+  {
+    "owner": "skyphusion-labs",
     "repo": "postern",
     "display": "postern",
     "tagline": "Email for humans and agents on the Cloudflare stack.",
     "accent": "#22d3ee",
     "accent2": "#34d399",
     "chip": "MAIL",
+    "motif": "email"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "postern-demo",
+    "display": "postern demo",
+    "tagline": "The public postern demo, pinned to a release.",
+    "accent": "#22d3ee",
+    "accent2": "#34d399",
+    "chip": "DEMO",
+    "motif": "email"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "postern-site",
+    "display": "posternonline.com",
+    "tagline": "The site for postern, email for humans and agents.",
+    "accent": "#22d3ee",
+    "accent2": "#34d399",
+    "chip": "SITE",
     "motif": "email"
   },
   {
@@ -184,7 +244,7 @@
     "owner": "skyphusion-labs",
     "repo": "search-mcp",
     "display": "search-mcp",
-    "tagline": "Cloudflare AI Search toolkit: MCP, widget, corpus sync.",
+    "tagline": "Self-host Cloudflare AI Search toolkit.",
     "accent": "#60a5fa",
     "accent2": "#06b6d4",
     "chip": "AGPL",
@@ -209,6 +269,16 @@
     "accent2": "#fb923c",
     "chip": "AUDIT",
     "motif": "search"
+  },
+  {
+    "owner": "skyphusion-labs",
+    "repo": "skyphusion-ai",
+    "display": "Skyphusion AI",
+    "tagline": "Workers AI, AI Gateway, and AI Search for WordPress.",
+    "accent": "#38bdf8",
+    "accent2": "#1d4ed8",
+    "chip": "WP",
+    "motif": "blog"
   },
   {
     "owner": "skyphusion-labs",
@@ -432,26 +502,6 @@
   },
   {
     "owner": "skyphusion-labs",
-    "repo": "poly-styrene",
-    "display": "Poly Styrene",
-    "tagline": "Technical help in a cybersecurity channel.",
-    "accent": "#ef4444",
-    "accent2": "#f97316",
-    "chip": "DISCORD",
-    "motif": "discord"
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "skyphusion-ai",
-    "display": "Skyphusion AI",
-    "tagline": "Workers AI, AI Gateway, and AI Search for WordPress.",
-    "accent": "#38bdf8",
-    "accent2": "#1d4ed8",
-    "chip": "WP",
-    "motif": "blog"
-  },
-  {
-    "owner": "skyphusion-labs",
     "repo": "zaraz-consent",
     "display": "Zaraz Consent",
     "tagline": "Reopen the Zaraz consent modal from WordPress.",
@@ -459,45 +509,5 @@
     "accent2": "#0f766e",
     "chip": "CONSENT",
     "motif": "blog"
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "pagefeather",
-    "display": "Pagefeather",
-    "tagline": "Many WordPress sites on Workers for Platforms.",
-    "accent": "#0ea5e9",
-    "accent2": "#0369a1",
-    "chip": "WFP",
-    "motif": "blog"
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "mt4-runtime",
-    "display": "mt4-runtime",
-    "tagline": "Linux runtime image: Wine, cloudflared, and an operator-installed MT4 terminal.",
-    "accent": "#60a5fa",
-    "accent2": "#06b6d4",
-    "chip": "RUNTIME",
-    "motif": "core"
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "postern-demo",
-    "display": "postern demo",
-    "tagline": "The public postern demo, pinned to a release.",
-    "accent": "#22d3ee",
-    "accent2": "#34d399",
-    "chip": "DEMO",
-    "motif": "email"
-  },
-  {
-    "owner": "skyphusion-labs",
-    "repo": "postern-site",
-    "display": "posternonline.com",
-    "tagline": "The site for postern, email for humans and agents.",
-    "accent": "#22d3ee",
-    "accent2": "#34d399",
-    "chip": "SITE",
-    "motif": "email"
   }
 ]

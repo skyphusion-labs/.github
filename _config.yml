@@ -5,10 +5,10 @@
 title: Skyphusion Labs Free Open Source Software
 description: >-
   Skyphusion Labs builds free, open source software that is not for sale: Vivijure
-  self-hosted AI film studio (v1.0), Postern agent mailbox (v1.4), Prism multimodal
-  AI with public BYOK, Hollow Grid, security-audit, and more. Founded by Conrad
-  Rockenhaus; one architect and five collaborators. Blog skyphusion.net, lab
-  skyphusion.org, code github.com/skyphusion-labs.
+  self-hosted AI film studio (v1.0), Pagefeather WordPress on Cloudflare, Postern
+  agent mailbox (v1.4), Prism multimodal AI with public BYOK, Hollow Grid,
+  security-audit, and more. Founded by Conrad Rockenhaus; one architect and five
+  collaborators. Blog skyphusion.net, lab skyphusion.org, code github.com/skyphusion-labs.
 url: "https://github.skyphusion.org"
 baseurl: ""
 lang: en
@@ -31,7 +31,7 @@ social:
     - https://github.skyphusion.net
     - https://x.com/rockrockenhaus
     - https://vivijure.dev
-    - https://demo.vivijure.com
+    - https://pagefeather.dev
 
 defaults:
   - scope:

@@ -4,9 +4,9 @@
 title: Home
 description: >-
   Skyphusion Labs builds free, open source software that is not for sale: the
-  Vivijure AI film studio (v1.0), Postern mailbox for agents (v1.4), Prism
-  multimodal AI with public BYOK, Hollow Grid, security-audit, and more.
-  Founded by Conrad Rockenhaus.
+  Vivijure AI film studio (v1.0), Pagefeather WordPress on Cloudflare,
+  Postern mailbox for agents (v1.4), Prism multimodal AI with public BYOK,
+  Hollow Grid, security-audit, and more. Founded by Conrad Rockenhaus.
 ---
 
 {% include_relative profile/README.md %}
