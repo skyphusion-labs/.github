@@ -140,12 +140,13 @@
     "owner": "skyphusion-labs",
     "repo": "search-mcp",
     "description": "Cloudflare AI Search toolkit for self-host: MCP server, streaming /ask Worker, docs widget, and git-to-R2 corpus sync. AGPL.",
-    "homepage": "https://github.com/skyphusion-labs/search-mcp"
+    "homepage": "https://search-mcp.dev"
   },
   {
     "owner": "skyphusion-labs",
     "repo": "search-mcp-site",
-    "description": "Landing and docs site for search-mcp, the Cloudflare AI Search toolkit (search-mcp.dev)"
+    "description": "Landing and docs site for search-mcp, the Cloudflare AI Search toolkit (search-mcp.dev)",
+    "homepage": "https://search-mcp.dev"
   },
   {
     "owner": "skyphusion-labs",
