@@ -16,7 +16,7 @@ The profile site is https://github.skyphusion.org. [`.github/workflows/pages.yml
 
 ## Checks this repo runs
 
-Workflows live in `.github/workflows/`. This tree has no job whose name is `ci`. Do not add an empty job just to invent that name. `coverage.yml` is the coverage check. This repo has no root `package.json` and no `go.mod`, so that job takes the no-manifest path. `corpus-notify.yml` asks search-mcp to refresh its corpus. That workflow does not block a merge.
+Workflows live in `.github/workflows/`. This tree has no job whose name is `ci`. Do not add an empty job just to invent that name. `coverage.yml` is the coverage check. This repo has no root `package.json` and no `go.mod`, so that job takes the no-manifest path.
 
 The approval gate is `.github/actions/approval-at-head/`. Callers pin that action by a full commit SHA. A change on `main` does nothing until those callers pin the new SHA. The gate passes only after an approval lands on the current pull request head. The test is `bash .github/scripts/tests/approval-at-head.test.sh`. [`.github/workflows/approval-at-head-test.yml`](.github/workflows/approval-at-head-test.yml) runs it. The test needs no token.
 
