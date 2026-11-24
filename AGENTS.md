@@ -34,7 +34,7 @@ Do not use an em dash (U+2014). Do not use an en dash (U+2013). Use a comma, a s
 
 State the limit next to the capability. Do not turn a measured result into a promise.
 
-Do not put crew seat names, laptop paths, or private memory stores in this public repo.
+Keep this guide about the public repo only. Do not document internal operator process here.
 
 ## Safety
 
